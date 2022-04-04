@@ -129,7 +129,7 @@ setmetatable(EventCallback, {
 					results = {event.callback(unpack(args))}
 					local output = results[1]
 					-- If the call returns nil then we continue with the next call
-					if not output then break end
+					if output == nil then break end
 					-- If the call returns false then we exit the loop
 					if not output then return false end
 					-- If the call of type returnvalue returns noerror then we continue the loop
