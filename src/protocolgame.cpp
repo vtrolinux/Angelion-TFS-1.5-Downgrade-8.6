@@ -218,6 +218,7 @@ void ProtocolGame::login(const std::string& name, uint32_t accountId, OperatingS
 
 		player->lastIP = player->getIP();
 		player->lastLoginSaved = std::max<time_t>(time(nullptr), player->lastLoginSaved + 1);
+		player->resetIdleTime();	
 		acceptPackets = true;
 	} else {
 		if (eventConnect != 0 || !g_config.getBoolean(ConfigManager::REPLACE_KICK_ON_LOGIN)) {
