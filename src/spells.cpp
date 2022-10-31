@@ -849,7 +849,7 @@ bool InstantSpell::playerCastInstant(Player* player, std::string& param)
 			}
 
 			target = playerTarget;
-			if (!target || target->isDead()) {
+			if (!target || target->isRemoved() || target->isDead()) {
 				if (!casterTargetOrDirection) {
 					player->addHealExhaust(cooldown);
 					player->sendCancelMessage(ret);
@@ -865,7 +865,7 @@ bool InstantSpell::playerCastInstant(Player* player, std::string& param)
 			}
 		} else {
 			target = player->getAttackedCreature();
-			if (!target || target->isDead()) {
+			if (!target || target->isRemoved() || target->isDead()) {
 				if (!casterTargetOrDirection) {
 					player->sendCancelMessage(RETURNVALUE_YOUCANONLYUSEITONCREATURES);
 					g_game.addMagicEffect(player->getPosition(), CONST_ME_POFF);
