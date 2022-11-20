@@ -2514,6 +2514,8 @@ void LuaScriptInterface::registerFunctions()
 
 	registerMethod("Npc", "setMasterPos", LuaScriptInterface::luaNpcSetMasterPos);
 
+	registerMethod("Npc", "getSpectators", LuaScriptInterface::luaNpcGetSpectators);
+
 	// Guild
 	registerClass("Guild", "", LuaScriptInterface::luaGuildCreate);
 	registerMetaMethod("Guild", "__eq", LuaScriptInterface::luaUserdataCompare);
@@ -10396,6 +10398,24 @@ int LuaScriptInterface::luaNpcSetMasterPos(lua_State* L)
 	int32_t radius = getNumber<int32_t>(L, 3, 1);
 	npc->setMasterPos(pos, radius);
 	pushBoolean(L, true);
+	return 1;
+}
+
+int LuaScriptInterface::luaNpcGetSpectators(lua_State* L)
+{
+	// npc:getSpectators()
+	Npc* npc = getUserdata<Npc>(L, 1);
+	if (!npc) {
+		lua_pushnil(L);
+		return 1;
+	}
+
+	int index = 0;
+	for (Creature* spectator : npc->getSpectators()) {
+		pushUserdata<Creature>(L, spectator);
+		setCreatureMetatable(L, -1, spectator);
+		lua_rawseti(L, -2, ++index);
+	}
 	return 1;
 }
 
