@@ -1678,6 +1678,11 @@ void ProtocolGame::sendMagicEffect(const Position& pos, uint8_t type)
 		return;
 	}
 
+	Tile* tile = g_game.map.getTile(pos);
+	if (!tile || !tile->getGround()) {
+		return;
+	}
+
 	NetworkMessage msg;
 	msg.addByte(0x83);
 	msg.addPosition(pos);
