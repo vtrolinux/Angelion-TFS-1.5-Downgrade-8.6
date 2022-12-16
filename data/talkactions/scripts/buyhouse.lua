@@ -24,7 +24,10 @@ function onSay(player, words, param)
 
 	local tile = Tile(position)
 	local house = tile and tile:getHouse()
-	if not house then
+	local playerPos = player:getPosition()
+	local houseEntry = house and house:getExitPosition()
+
+	if not house or playerPos ~= houseEntry then
 		player:sendCancelMessage("You have to be looking at the door of the house you would like to buy.")
 		return false
 	end
