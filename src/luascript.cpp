@@ -1620,6 +1620,11 @@ void LuaScriptInterface::registerFunctions()
 	registerEnum(SKILL_MAGLEVEL)
 	registerEnum(SKILL_LEVEL)
 
+	registerEnum(STAT_MAXHITPOINTS)
+	registerEnum(STAT_MAXMANAPOINTS)
+	registerEnum(STAT_MAGICPOINTS)
+	registerEnum(STAT_SOULPOINTS)
+
 	registerEnum(SPECIALSKILL_CRITICALHITCHANCE)
 	registerEnum(SPECIALSKILL_CRITICALHITAMOUNT)
 	registerEnum(SPECIALSKILL_LIFELEECHCHANCE)
