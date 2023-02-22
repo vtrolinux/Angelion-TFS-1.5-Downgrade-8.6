@@ -174,3 +174,8 @@ function Creature:canAccessPz()
 	end
 	return true
 end
+
+
+function Creature.getMonster(self)
+	return self:isMonster() and self or nil
+end
