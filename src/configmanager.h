@@ -72,6 +72,7 @@ class ConfigManager
 			LOTTERY_SYSTEM,
 			NPCS_USING_BANK_MONEY,
 			BLOCK_LOGIN,
+			CHECK_DUPLICATE_STORAGE_KEYS,
 
 			LAST_BOOLEAN_CONFIG /* this must be the last one */
 		};
