@@ -310,3 +310,9 @@ function Player.getWeaponType(self)
 	end
 	return WEAPON_NONE
 end
+
+function Player.isPromoted(self)
+	local vocation = self:getVocation()
+	local fromVocId = vocation:getDemotion():getId()
+	return vocation:getId() ~= fromVocId
+end
