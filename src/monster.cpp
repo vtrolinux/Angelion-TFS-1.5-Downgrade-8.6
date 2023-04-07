@@ -817,7 +817,7 @@ void Monster::doAttacking(uint32_t interval)
 		return;
 	}
 
-	bool updateLook = true;
+	bool lookUpdated = false;
 	bool resetTicks = interval != 0;
 	attackTicks += interval;
 
@@ -833,9 +833,9 @@ void Monster::doAttacking(uint32_t interval)
 
 		if (canUseSpell(myPos, targetPos, spellBlock, interval, inRange, resetTicks)) {
 			if (spellBlock.chance >= static_cast<uint32_t>(uniform_random(1, 100))) {
-				if (updateLook) {
+				if (!lookUpdated) {
 					updateLookDirection();
-					updateLook = false;
+					lookUpdated = true;
 				}
 
 				minCombatValue = spellBlock.minCombatValue;
@@ -854,7 +854,8 @@ void Monster::doAttacking(uint32_t interval)
 		}
 	}
 
-	if (updateLook) {
+	// ensure ranged creatures turn to player
+	if (!lookUpdated && lastMeleeAttack == 0) {
 		updateLookDirection();
 	}
 
@@ -1942,54 +1943,31 @@ void Monster::updateLookDirection()
 		int32_t dx = std::abs(offsetx);
 		int32_t dy = std::abs(offsety);
 		if (dx > dy) {
-			//look EAST/WEST
+			// look EAST/WEST
 			if (offsetx < 0) {
 				newDir = DIRECTION_WEST;
 			} else {
 				newDir = DIRECTION_EAST;
 			}
 		} else if (dx < dy) {
-			//look NORTH/SOUTH
+			// look NORTH/SOUTH
 			if (offsety < 0) {
 				newDir = DIRECTION_NORTH;
 			} else {
 				newDir = DIRECTION_SOUTH;
 			}
+		} else if (offsetx < 0 && offsety < 0) {
+			// target to north-west
+			newDir = DIRECTION_WEST;
+		} else if (offsetx < 0 && offsety > 0) {
+			// target to south-west
+			newDir = DIRECTION_WEST;
+		} else if (offsetx > 0 && offsety < 0) {
+			// target to north-east
+			newDir = DIRECTION_EAST;
 		} else {
-			Direction dir = getDirection();
-			if (offsetx < 0 && offsety < 0) {
-				if (dir == DIRECTION_SOUTH) {
-					newDir = DIRECTION_WEST;
-				} else if (dir == DIRECTION_NORTH) {
-					newDir = DIRECTION_WEST;
-				} else if (dir == DIRECTION_EAST) {
-					newDir = DIRECTION_NORTH;
-				}
-			} else if (offsetx < 0 && offsety > 0) {
-				if (dir == DIRECTION_NORTH) {
-					newDir = DIRECTION_WEST;
-				} else if (dir == DIRECTION_SOUTH) {
-					newDir = DIRECTION_WEST;
-				} else if (dir == DIRECTION_EAST) {
-					newDir = DIRECTION_SOUTH;
-				}
-			} else if (offsetx > 0 && offsety < 0) {
-				if (dir == DIRECTION_SOUTH) {
-					newDir = DIRECTION_EAST;
-				} else if (dir == DIRECTION_NORTH) {
-					newDir = DIRECTION_EAST;
-				} else if (dir == DIRECTION_WEST) {
-					newDir = DIRECTION_NORTH;
-				}
-			} else {
-				if (dir == DIRECTION_NORTH) {
-					newDir = DIRECTION_EAST;
-				} else if (dir == DIRECTION_SOUTH) {
-					newDir = DIRECTION_EAST;
-				} else if (dir == DIRECTION_WEST) {
-					newDir = DIRECTION_SOUTH;
-				}
-			}
+			// target to south-east
+			newDir = DIRECTION_EAST;
 		}
 	}
 
