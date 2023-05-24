@@ -243,6 +243,15 @@ void Connection::send(const OutputMessage_ptr& msg)
 		return;
 	}
 
+	if (g_config.getBoolean(ConfigManager::SHOW_PACKETS)) {
+		uint8_t* tmpOutputBuffer = msg->getOutputBuffer();
+		std::cout << "PACKET: ";
+		for (int i = 0; i < msg->getLength(); i++) {
+			std::cout << (int) tmpOutputBuffer[i] << " ";
+		}
+		std::cout << std::endl;
+	}
+
 	bool noPendingWrite = messageQueue.empty();
 	messageQueue.emplace_back(msg);
 	if (noPendingWrite) {

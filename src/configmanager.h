@@ -72,6 +72,7 @@ class ConfigManager
 			NPCS_USING_BANK_MONEY,
 			BLOCK_LOGIN,
 			CHECK_DUPLICATE_STORAGE_KEYS,
+			SHOW_PACKETS,
 
 			LAST_BOOLEAN_CONFIG /* this must be the last one */
 		};
