@@ -21,8 +21,8 @@
 #define FS_DEFINITIONS_H
 
 static constexpr auto STATUS_SERVER_NAME = "The Forgotten Server";
-static constexpr auto STATUS_SERVER_VERSION = "1.5 (Nekiro's 8.60 downgrade & Movie Updates)";
-static constexpr auto STATUS_SERVER_DEVELOPERS = "Mark Samman";
+static constexpr auto STATUS_SERVER_VERSION = "1.5 (Nekiro's 8.60 downgrade, Movie Updates and Giorox Polishes)";
+static constexpr auto STATUS_SERVER_DEVELOPERS = "Nekiro, Movie and Giorox";
 
 static constexpr auto CLIENT_VERSION_MIN = 860;
 static constexpr auto CLIENT_VERSION_MAX = 860;
@@ -66,6 +66,7 @@ static constexpr auto AUTHENTICATOR_PERIOD = 30U;
 #pragma warning(disable:4351) // new behavior: elements of array will be default initialized
 #pragma warning(disable:4458) // declaration hides class member
 #pragma warning(disable:4996) //gethostbyname is deprecated
+#pragma warning(disable:4275) // Can be ignored in Visual C++ if we are deriving a type from C++ STL
 #endif
 
 #define strcasecmp _stricmp

@@ -149,6 +149,7 @@ void printServerVersion()
 
 	std::cout << "A server developed by " << STATUS_SERVER_DEVELOPERS << std::endl;
 	std::cout << "Downgraded and further developed by Nekiro" << std::endl;
+	std::cout << "Polished by Giorox from Nekiro and Movie" << std::endl;
 	std::cout << "Visit our forum for updates, support, and resources: http://otland.net/." << std::endl;
 	std::cout << std::endl;
 }
