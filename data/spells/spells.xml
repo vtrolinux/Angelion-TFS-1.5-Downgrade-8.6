@@ -303,6 +303,7 @@
 	<rune group="attack" name="Fireball Rune" id="2302" allowfaruse="1" charges="5" level="27" magiclevel="4" cooldown="2000" needtarget="1" blocktype="solid" script="attack/fireball_rune.lua" />
 	<rune group="attack" name="Great Fireball Rune" id="2304" allowfaruse="1" charges="4" level="30" magiclevel="4" cooldown="2000" blocktype="solid" script="attack/great_fireball_rune.lua" />
 	<rune group="attack" name="Heavy Magic Missile Rune" id="2311" allowfaruse="1" charges="10" level="25" cooldown="2000" magiclevel="3" needtarget="1" blocktype="solid" script="attack/heavy_magic_missile_rune.lua" />
+	<rune group="attack" name="Light Magic Missile Rune" id="2287" allowfaruse="1" charges="10" level="15" cooldown="2000" magiclevel="0" needtarget="1" blocktype="solid" script="attack/light_magic_missile_rune.lua" />
 	<rune group="attack" name="Holy Missile Rune" id="2295" allowfaruse="1" charges="5" level="27" magiclevel="4" cooldown="2000" needtarget="1" blocktype="solid" script="attack/holy_missile_rune.lua">
 		<vocation name="Paladin" />
 		<vocation name="Royal Paladin" showInDescription="0" />
@@ -346,10 +347,6 @@
 		<vocation name="Druid" />
 		<vocation name="Master Sorcerer" />
 		<vocation name="Elder Druid" />
-	</instant>
-	<instant group="support" name="Arrow Call" words="exevo infir con" level="1" mana="10" soul="1" premium="0" aggressive="0" selftarget="1" cooldown="2000" needlearn="0" script="conjuring/arrow_call.lua">
-		<vocation name="Paladin" />
-		<vocation name="Royal Paladin" />
 	</instant>
 	<instant group="support" name="Avalanche Rune" words="adori mas frigo" level="30" mana="530" soul="3" aggressive="0" cooldown="2000" needlearn="0" script="conjuring/avalanche_rune.lua">
 		<vocation name="Druid" />
@@ -479,6 +476,16 @@
 		<vocation name="Druid" />
 		<vocation name="Elder Druid" />
 	</instant>
+	<instant group="support" name="Light Magic Missile Rune" words="adori min vis" level="15" mana="120" soul="1" aggressive="0" cooldown="2000" needlearn="0" script="conjuring/light_magic_missile_rune.lua">
+		<vocation name="Sorcerer" />
+		<vocation name="Master Sorcerer" />
+		<vocation name="Druid" />
+		<vocation name="Elder Druid" />
+		<vocation name="Paladin" />
+		<vocation name="Royal Paladin" />
+		<vocation name="Knight" />
+		<vocation name="Elite Knight" />
+	</instant>
 	<instant group="support" name="Holy Missile Rune" words="adori san" level="27" mana="300" soul="3" premium="1" aggressive="0" cooldown="2000" needlearn="0" script="conjuring/holy_missile_rune.lua">
 		<vocation name="Paladin" />
 		<vocation name="Royal Paladin" />
@@ -514,9 +521,6 @@
 		<vocation name="Druid" />
 		<vocation name="Master Sorcerer" />
 		<vocation name="Elder Druid" />
-	</instant>
-	<instant group="support" name="Practice Magic Missile Rune" words="adori dis min vis" level="1" mana="5" soul="0" aggressive="0" cooldown="2000" needlearn="0" script="conjuring/practice_magic_missile_rune.lua">
-		<vocation name="None" />
 	</instant>
 	<instant group="support" name="Soulfire Rune" words="adevo res flam" level="27" mana="420" soul="3" premium="1" aggressive="0" cooldown="2000" needlearn="0" script="conjuring/soulfire_rune.lua">
 		<vocation name="Sorcerer" />
