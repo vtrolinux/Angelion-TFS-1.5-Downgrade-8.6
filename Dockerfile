@@ -1,41 +1,36 @@
-FROM alpine:3.13.0 AS build
-# crypto++-dev is in edge/testing
-RUN apk add --no-cache --repository http://dl-3.alpinelinux.org/alpine/edge/testing/ \
-  binutils \
-  boost-dev \
+FROM alpine:latest AS build
+# crypto++-dev is in edge/community
+RUN apk add --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/edge/community/ \
   build-base \
-  clang \
+  boost-dev \
   cmake \
   crypto++-dev \
   fmt-dev \
-  gcc \
-  gmp-dev \
   luajit-dev \
-  make \
   mariadb-connector-c-dev \
-  pugixml-dev
+  pugixml-dev \
+  samurai
 
 COPY cmake /usr/src/forgottenserver/cmake/
 COPY src /usr/src/forgottenserver/src/
-COPY CMakeLists.txt /usr/src/forgottenserver/
-WORKDIR /usr/src/forgottenserver/build
-RUN cmake .. && make
+COPY CMakeLists.txt CMakePresets.json /usr/src/forgottenserver/
+WORKDIR /usr/src/forgottenserver
+RUN cmake --preset default && cmake --build --config RelWithDebInfo --preset default
 
-FROM alpine:3.13.0
-# crypto++ is in edge/testing
-RUN apk add --no-cache --repository http://dl-3.alpinelinux.org/alpine/edge/testing/ \
+FROM alpine:latest
+# crypto++ is in edge/community
+RUN apk add --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/edge/community/ \
   boost-iostreams \
   boost-system \
   crypto++ \
   fmt \
-  gmp \
   luajit \
   mariadb-connector-c \
   pugixml
 
 COPY --from=build /usr/src/forgottenserver/build/tfs /bin/tfs
 COPY data /srv/data/
-COPY LICENSE README.md *.dist *.sql key.pem /srv/
+COPY config.lua LICENSE README.md *.sql key.pem /srv/
 
 EXPOSE 7171 7172
 WORKDIR /srv
