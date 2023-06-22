@@ -1,6 +1,6 @@
 function onSay(player, words, param)
-	if not player:getGroup():getAccess() then
-		return true
+	if player:getAccountType() < ACCOUNT_TYPE_TUTOR then
+		return false
 	end
 
 	local target = Player(param)

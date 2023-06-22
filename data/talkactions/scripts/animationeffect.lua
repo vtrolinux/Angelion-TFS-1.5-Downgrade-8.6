@@ -3,6 +3,10 @@ function onSay(player, words, param)
 		return true
 	end
 
+	if player:getAccountType() < ACCOUNT_TYPE_COMMUNITYMANAGER then
+		return false
+	end
+
 	local effect = tonumber(param)
 	local position = player:getPosition()
 	local toPositionLow = {z = position.z}

@@ -3,6 +3,10 @@ function onSay(player, words, param)
 		return true
 	end
 
+	if player:getAccountType() < ACCOUNT_TYPE_COMMUNITYMANAGER then
+		return false
+	end
+
 	local effect = tonumber(param)
 	if effect and effect > 0 then
 		player:getPosition():sendMagicEffect(effect)

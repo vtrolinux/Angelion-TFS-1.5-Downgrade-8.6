@@ -5,6 +5,10 @@ function onSay(player, words, param)
 		return true
 	end
 
+	if player:getAccountType() < ACCOUNT_TYPE_GAMEMASTER then
+		return false
+	end
+
 	local name = param
 	local reason = ''
 

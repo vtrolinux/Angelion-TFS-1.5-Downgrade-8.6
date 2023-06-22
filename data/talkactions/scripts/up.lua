@@ -3,6 +3,10 @@ function onSay(player, words, param)
 		return true
 	end
 
+	if player:getAccountType() < ACCOUNT_TYPE_GAMEMASTER then
+		return false
+	end
+
 	local position = player:getPosition()
 	position.z = position.z - 1
 	player:teleportTo(position)

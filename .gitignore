@@ -185,3 +185,6 @@ pip-log.txt
 ## TFS / OT
 #############
 config.lua
+
+# Docker artifacts
+db-volume/

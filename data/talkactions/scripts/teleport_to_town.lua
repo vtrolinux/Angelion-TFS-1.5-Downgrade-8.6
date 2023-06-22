@@ -3,6 +3,10 @@ function onSay(player, words, param)
 		return true
 	end
 
+	if player:getAccountType() < ACCOUNT_TYPE_GAMEMASTER then
+		return false
+	end
+
 	local town = Town(param) or Town(tonumber(param))
 	if town then
 		player:teleportTo(town:getTemplePosition())

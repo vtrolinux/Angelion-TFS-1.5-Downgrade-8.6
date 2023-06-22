@@ -3,6 +3,10 @@ function onSay(player, words, param)
 		return true
 	end
 
+	if player:getAccountType() < ACCOUNT_TYPE_GAMEMASTER then
+		return false
+	end
+
 	local creature = Creature(param)
 	if not creature then
 		player:sendCancelMessage("A creature with that name could not be found.")

@@ -10,6 +10,10 @@ function onSay(player, words, param)
 		return true
 	end
 
+	if player:getAccountType() < ACCOUNT_TYPE_COMMUNITYMANAGER then
+		return false
+	end
+
 	local lookType = tonumber(param)
 	if lookType >= 0 and lookType < 367 and not table.contains(invalidTypes, lookType) then
 		local playerOutfit = player:getOutfit()
