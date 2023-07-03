@@ -13,7 +13,7 @@
 
 
 **Protocol version**
-7.72/8.60
+8.60
 
 ### Changes Proposed
 

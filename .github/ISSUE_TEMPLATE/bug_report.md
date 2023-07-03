@@ -2,13 +2,13 @@
 name: Bug report
 about: Create a report to help us improve
 title: ''
-labels: ''
+labels: 'bug'
 assignees: ''
 
 ---
 
 **Protocol version**
-7.72/8.60
+8.60
 
 **Describe the bug**
 A clear and concise description of what the bug is.
