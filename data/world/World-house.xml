@@ -501,8 +501,8 @@
 	<house name="Outlaw Camp 6" houseid="884" entryx="32663" entryy="32209" entryz="7" rent="200" townid="3" size="2" />
 	<house name="Outlaw Camp 1" houseid="885" entryx="32645" entryy="32204" entryz="7" rent="1660" townid="3" size="46" />
 	<house name="Outlaw Castle" houseid="886" entryx="32660" entryy="32236" entryz="7" rent="8000" guildhall="true" townid="3" size="158" />
-	<house name="Tunnel Gardens 1" houseid="888" entryx="32606" entryy="31908" entryz="11" rent="1820" townid="3" size="20" />
-	<house name="Tunnel Gardens 3" houseid="889" entryx="32603" entryy="31908" entryz="11" rent="2000" townid="3" size="23" />
+	<house name="Tunnel Gardens 1" houseid="888" entryx="32606" entryy="31908" entryz="11" rent="1820" townid="3" size="6" />
+	<house name="Tunnel Gardens 3" houseid="889" entryx="32603" entryy="31908" entryz="11" rent="2000" townid="3" size="22" />
 	<house name="Tunnel Gardens 4" houseid="890" entryx="32602" entryy="31909" entryz="11" rent="2000" townid="3" size="24" />
 	<house name="Tunnel Gardens 2" houseid="891" entryx="32606" entryy="31909" entryz="11" rent="1820" townid="3" size="20" />
 	<house name="Tunnel Gardens 5" houseid="892" entryx="32594" entryy="31905" entryz="11" rent="1360" townid="3" size="16" />
@@ -534,7 +534,7 @@
 	<house name="Radiant Plaza 1" houseid="1895" entryx="32771" entryy="31224" entryz="7" rent="5620" townid="13" size="123" />
 	<house name="Radiant Plaza 2" houseid="1896" entryx="32770" entryy="31222" entryz="7" rent="3820" townid="13" size="87" />
 	<house name="Radiant Plaza 3" houseid="1897" entryx="32766" entryy="31224" entryz="7" rent="4900" townid="13" size="114" />
-	<house name="Radiant Plaza 4" houseid="1898" entryx="32769" entryy="31231" entryz="7" rent="7460" townid="13" size="177" />
+	<house name="Radiant Plaza 4" houseid="1898" entryx="32769" entryy="31231" entryz="7" rent="7460" townid="13" size="178" />
 	<house name="Sun Palace" houseid="1899" entryx="32760" entryy="31209" entryz="7" rent="23120" guildhall="true" townid="13" size="460" />
 	<house name="Halls of Serenity" houseid="1900" entryx="32776" entryy="31165" entryz="7" rent="23360" guildhall="true" townid="13" size="432" />
 	<house name="Cascade Towers" houseid="1901" entryx="32844" entryy="31192" entryz="7" rent="19500" guildhall="true" townid="13" size="315" />
@@ -554,7 +554,7 @@
 	<house name="Beach Home Apartments, Flat 13" houseid="1915" entryx="32314" entryy="32234" entryz="6" rent="880" townid="2" size="13" />
 	<house name="Beach Home Apartments, Flat 14" houseid="1916" entryx="32312" entryy="32234" entryz="6" rent="385" townid="2" size="4" />
 	<house name="Beach Home Apartments, Flat 15" houseid="1917" entryx="32309" entryy="32234" entryz="6" rent="385" townid="2" size="4" />
-	<house name="Thais Clanhall" houseid="1918" entryx="32326" entryy="32272" entryz="7" rent="8420" guildhall="true" townid="2" size="154" />
+	<house name="Thais Clanhall" houseid="1918" entryx="32326" entryy="32272" entryz="7" rent="8420" guildhall="true" townid="2" size="153" />
 	<house name="Harbour Street 4" houseid="1919" entryx="32332" entryy="32257" entryz="7" rent="935" townid="2" size="14" />
 	<house name="Thais Hostel" houseid="1920" entryx="32333" entryy="32255" entryz="6" rent="6980" townid="2" size="63" />
 	<house name="Lower Swamp Lane 1" houseid="1921" entryx="32356" entryy="32262" entryz="7" rent="4740" townid="2" size="62" />
@@ -716,7 +716,7 @@
 	<house name="Greenshore Clanhall" houseid="2085" entryx="32278" entryy="32069" entryz="7" rent="10800" guildhall="true" townid="2" size="133" />
 	<house name="Greenshore Village 1" houseid="2086" entryx="32274" entryy="32062" entryz="7" rent="2420" townid="2" size="30" />
 	<house name="Greenshore Village, Shop" houseid="2087" entryx="32278" entryy="32052" entryz="7" rent="1800" townid="2" size="20" />
-	<house name="Greenshore Village, Villa" houseid="2088" entryx="32276" entryy="32045" entryz="7" rent="8700" townid="2" size="115" />
+	<house name="Greenshore Village, Villa" houseid="2088" entryx="32276" entryy="32045" entryz="7" rent="8700" townid="2" size="117" />
 	<house name="Greenshore Village 2" houseid="2089" entryx="32264" entryy="32042" entryz="7" rent="780" townid="2" size="10" />
 	<house name="Greenshore Village 3" houseid="2090" entryx="32259" entryy="32042" entryz="7" rent="780" townid="2" size="10" />
 	<house name="Greenshore Village 5" houseid="2091" entryx="32264" entryy="32041" entryz="7" rent="780" townid="2" size="10" />
@@ -733,7 +733,7 @@
 	<house name="Mercenary Tower" houseid="2103" entryx="32208" entryy="32437" entryz="7" rent="41955" guildhall="true" townid="2" size="525" />
 	<house name="Guildhall of the Red Rose" houseid="2104" entryx="32180" entryy="32427" entryz="7" rent="27725" guildhall="true" townid="2" size="340" />
 	<house name="Fibula Village, Bar" houseid="2105" entryx="32151" entryy="32399" entryz="7" rent="5235" townid="2" size="59" />
-	<house name="Fibula Village, Villa" houseid="2106" entryx="32140" entryy="32374" entryz="7" rent="11490" townid="2" size="181" />
+	<house name="Fibula Village, Villa" houseid="2106" entryx="32140" entryy="32374" entryz="7" rent="11490" townid="2" size="182" />
 	<house name="Fibula Clanhall" houseid="2107" entryx="32178" entryy="32373" entryz="7" rent="11430" guildhall="true" townid="2" size="128" />
 	<house name="Spiritkeep" houseid="2108" entryx="32265" entryy="32316" entryz="7" rent="19210" guildhall="true" townid="2" size="316" />
 	<house name="Snake Tower" houseid="2109" entryx="32435" entryy="32359" entryz="7" rent="29720" guildhall="true" townid="2" size="532" />
@@ -1012,13 +1012,4 @@
 	<house name="Theater Avenue 5b" houseid="2389" entryx="32359" entryy="31782" entryz="6" rent="450" townid="4" size="7" />
 	<house name="Theater Avenue 5c" houseid="2390" entryx="32359" entryy="31782" entryz="6" rent="450" townid="4" size="7" />
 	<house name="Theater Avenue 5d" houseid="2391" entryx="32361" entryy="31782" entryz="6" rent="450" townid="4" size="7" />
-	<house name="Greenshore Fucking House" houseid="2392" entryx="32268" entryy="32051" entryz="7" rent="42000" townid="2" size="21" />
-	<house name="Backroad House 1" houseid="2393" entryx="32302" entryy="32056" entryz="7" rent="32000" townid="2" size="103" />
-	<house name="Suspended Flat #1" houseid="2395" entryx="32303" entryy="32016" entryz="6" rent="12000" townid="2" size="36" />
-	<house name="Submersed House #1" houseid="2398" entryx="32299" entryy="32034" entryz="9" rent="0" townid="2" size="38" />
-	<house name="Submersed House #3" houseid="2400" entryx="32308" entryy="32034" entryz="9" rent="0" townid="2" size="45" />
-	<house name="Submersed House #2" houseid="2402" entryx="32303" entryy="32036" entryz="9" rent="0" townid="2" size="32" />
-	<house name="Submersed House #4" houseid="2404" entryx="32304" entryy="32041" entryz="9" rent="0" townid="2" size="32" />
-	<house name="Suspended Flat #2" houseid="2405" entryx="32304" entryy="32021" entryz="6" rent="12000" townid="2" size="42" />
-	<house name="Warriors Guildhall" houseid="2406" entryx="32352" entryy="32206" entryz="7" rent="25500" guildhall="true" townid="2" size="255" />
 </houses>
