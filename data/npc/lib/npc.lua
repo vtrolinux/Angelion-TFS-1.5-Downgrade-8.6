@@ -1,5 +1,6 @@
 -- Including the Advanced NPC System
 dofile('data/npc/lib/npcsystem/npcsystem.lua')
+dofile('data/npc/lib/npcsystem/customModules.lua')
 
 function msgcontains(message, keyword)
 	local message, keyword = message:lower(), keyword:lower()
@@ -142,4 +143,8 @@ function getMoneyWeight(money)
 		end
 	end
 	return weight
+end
+
+function titleCase(str)
+    return (str:gsub("^%l", string.upper))
 end
