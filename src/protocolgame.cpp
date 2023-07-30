@@ -1340,18 +1340,7 @@ void ProtocolGame::sendSaleItemList(const std::list<ShopInfo>& shop)
 	NetworkMessage msg;
 	msg.addByte(0x7B);
 
-	uint16_t moneyType = player->shopOwner ? player->shopOwner->getMoneyType() : 0;
-	if (moneyType == 0) {
-		uint64_t playerMoney = player->getMoney();
-		if (g_config.getBoolean(ConfigManager::NPCS_USING_BANK_MONEY)) {
-			uint64_t playerBank = player->getBankBalance();
-			msg.add<uint64_t>(playerBank + playerMoney); // deprecated and ignored by QT client. OTClient still uses it.
-		} else {
-			msg.add<uint64_t>(playerMoney);
-		}
-	} else {
-		msg.add<uint32_t>(player->getItemTypeCount(moneyType));
-	}
+	msg.add<uint32_t>(player->getMoney());
 
 	std::map<uint16_t, uint32_t> saleMap;
 
@@ -2402,8 +2391,8 @@ void ProtocolGame::AddShopItem(NetworkMessage& msg, const ShopInfo& item)
 
 	msg.addString(item.realName);
 	msg.add<uint32_t>(it.weight);
-	msg.add<uint32_t>(std::max<uint32_t>(item.buyPrice, 0));
-	msg.add<uint32_t>(std::max<uint32_t>(item.sellPrice, 0));
+	msg.add<uint32_t>(item.buyPrice);
+	msg.add<uint32_t>(item.sellPrice);
 }
 
 void ProtocolGame::parseExtendedOpcode(NetworkMessage& msg)
