@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<monster name="Quara Constrictor" nameDescription="a quara constrictor" race="blood" experience="250" speed="380" manacost="670">
+<monster name="Quara Constrictor" nameDescription="a quara constrictor" race="blood" experience="380" speed="380" manacost="0">
 	<health now="450" max="450" />
 	<look type="46" corpse="6065" />
 	<targetchange interval="4000" chance="10" />
@@ -17,6 +17,7 @@
 		<flag runonhealth="30" />
 		<flag canwalkonenergy="0" />
 		<flag canwalkonpoison="0" />
+		<flag canwalkonfire="1" />
 	</flags>
 	<attacks>
 		<attack name="melee" interval="2000" min="0" max="-150" poison="20" />

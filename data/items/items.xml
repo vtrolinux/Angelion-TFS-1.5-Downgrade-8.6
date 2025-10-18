@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 <items>
 	<item id="1" name="water" />
-	<item id="2" name="lifefluid" />
+	<item id="2" name="blood" />
 	<item id="3" name="beer" />
 	<item id="4" name="slime" />
 	<item id="5" name="lemonade" />
 	<item id="6" name="milk" />
 	<item id="7" name="manafluid" />
-	<item id="10" name="blood" />
+	<item id="10" name="lifefluid" />
 	<item id="11" name="oil" />
 	<item id="13" name="urine" />
 	<item id="14" name="coconut milk" />
@@ -6372,6 +6372,7 @@
 		<attribute key="decayTo" value="2822" />
 		<attribute key="duration" value="900" />
 		<attribute key="corpseType" value="venom" />
+		<attribute key="fluidSource" value="slime" />
 	</item>
 	<item id="3069" article="a" name="dead cyclops">
 		<attribute key="containerSize" value="30" />

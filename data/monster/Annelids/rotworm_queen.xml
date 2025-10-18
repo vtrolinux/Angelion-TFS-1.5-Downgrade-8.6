@@ -19,10 +19,19 @@
 	<attacks>
 		<attack name="melee" interval="2000" min="0" max="-80" />
 	</attacks>
-	<defenses armor="10" defense="15" />
+	<defenses armor="10" defense="15">
+		<defense name="healing" interval="1000" chance="15" min="8" max="14">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<summons maxSummons="3">
+        	<summon name="Rotworm" interval="2000" chance="10" max="3" />
+    	</summons>
 	<loot>
-		<item name="gold coin" countmax="47" chance="100000" />
-		<item name="worm" countmax="45" chance="20000" />
-		<item name="gland" chance="3333" />
+		<item name="Gold Coin" countmax="100" chance="76060" />
+        	<item name="Gold Coin" countmax="10" chance="76060" />
+        	<item name="Worm" countmax="50" chance="47890" />
+        	<item name="Legion Helmet" chance="18310" />
+        	<item name="Gland" chance="12680" />
 	</loot>
 </monster>

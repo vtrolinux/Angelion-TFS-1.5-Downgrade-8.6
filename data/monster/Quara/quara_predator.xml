@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<monster name="Quara Predator" nameDescription="a quara predator" race="blood" experience="1600" speed="450">
+<monster name="Quara Predator" nameDescription="a quara predator" race="blood" experience="1850" speed="450" manacost="0">
 	<health now="2200" max="2200" />
 	<look type="20" corpse="6067" />
 	<targetchange interval="4000" chance="10" />
@@ -41,8 +41,8 @@
 		<immunity ice="1" />
 	</immunities>
 	<voices interval="5000" chance="10">
-        <voice sentence="Gnarr!" />
-        <voice sentence="Tcharr!" />
+        <voice sentence="Gnarrr!" />
+        <voice sentence="Tcharrr!" />
 		<voice sentence="Rrrah!" />
 		<voice sentence="Rraaar!" />
 	</voices>

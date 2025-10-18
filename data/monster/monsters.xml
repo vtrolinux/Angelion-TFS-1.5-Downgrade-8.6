@@ -7,6 +7,7 @@
 
 	<!-- Annelids -->
 	<monster name="Carrion Worm" file="Annelids/carrion_worm.xml" />
+    <monster name="Enraged Bookworm" file="Annelids/enraged_bookworm.xml" />
 	<monster name="Rift Worm" file="Annelids/rift_worm.xml" />
 	<monster name="Rotworm" file="Annelids/rotworm.xml" />
 	<monster name="Rottie The Rotworm" file="Annelids/rottie_the_rotworm.xml" />
@@ -166,7 +167,7 @@
 	<monster name="Hacker" file="Deprecated Creatures/hacker.xml" />
 	<monster name="Primitive" file="Deprecated Creatures/primitive.xml" />
 	<monster name="The Ruthless Herald" file="Deprecated Creatures/the_ruthless_herald.xml" />
-	<monster name="World Bug" file="Deprecated Creatures/world_bug.xml" />
+	<monster name="Tibia Bug" file="Deprecated Creatures/tibia_bug.xml" />
 	<monster name="Undead Minion" file="Deprecated Creatures/undead_minion.xml" />
 	<monster name="Bones" file="Deprecated Creatures/bones.xml" />
 	<monster name="Fluffy" file="Deprecated Creatures/fluffy.xml" />
@@ -266,6 +267,7 @@
 	<monster name="Dryad" file="Event Creatures/dryad.xml" />
 	<monster name="Grynch Clan Goblin" file="Event Creatures/grynch_clan_goblin.xml" />
 	<monster name="The Halloween Hare" file="Event Creatures/the_halloween_hare.xml" />
+    <monster name="The Mutated Pumpkin" file="Event Creatures/the_mutated_pumpkin.xml" />
 	<monster name="Undead Jester" file="Event Creatures/undead_jester.xml" />
 
 	<!-- Felines -->

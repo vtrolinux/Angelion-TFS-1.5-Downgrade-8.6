@@ -17,10 +17,11 @@
 		<flag runonhealth="30" />
 		<flag canwalkonfire="0" />
 		<flag canwalkonpoison="0" />
+		<flag canwalkonenergy="1" />
 	</flags>
 	<attacks>
-		<attack name="melee" interval="2000" min="0" max="-20" />
-		<attack name="fire" interval="2000" chance="20" range="7" min="-30" max="-75">
+		<attack name="melee" interval="2000" min="0" max="-26" />
+		<attack name="fire" interval="2000" chance="20" range="7" min="-25" max="-55">
 			<attribute key="shootEffect" value="fire" />
 			<attribute key="areaEffect" value="fire" />
 		</attack>
@@ -45,19 +46,19 @@
 		<voice sentence="Hihihihi!" />
 	</voices>
 	<loot>
-		<item id="2148" name="gold coin" chance="63913" countmax="40" />
-		<item id="2687" name="cookie" chance="30001" countmax="8" />
-		<item id="2129" name="wolf tooth chain" chance="10121" />
-		<item id="10569" name="witch broom" chance="10009" />
-		<item id="2800" name="star herb" chance="9005" />
-		<item id="2643" name="leather boots" chance="5017" />
-		<item id="2654" name="cape" chance="4958" />
-		<item id="2405" name="sickle" chance="3892" />
-		<item id="2199" name="garlic necklace" chance="2515" />
-		<item id="2651" name="coat" chance="2008" />
-		<item id="2185" name="necrotic rod" chance="1085" />
-		<item id="2402" name="silver dagger" chance="556" />
-		<item id="10570" name="witch hat" chance="90" />
-		<item id="11211" name="stuffed toad" chance="6" />
+		<item name="Gold Coin" countmax="40" chance="63920" />
+        	<item name="Cookie" countmax="8" chance="30010" />
+        	<item name="Wolf Tooth Chain" chance="10080" />
+        	<item name="Witch Broom" chance="9970" />
+        	<item name="Star Herb" chance="8960" />
+        	<item name="Leather Boots" chance="5040" />
+        	<item name="Cape" chance="4980" />
+        	<item name="Sickle" chance="3900" />
+        	<item name="Garlic Necklace" chance="2530" />
+        	<item name="Coat" chance="2010" />
+        	<item name="Necrotic Rod" chance="1080" />
+        	<item name="Silver Dagger" chance="550" />
+        	<item name="Witch Hat" chance="100" />
+        	<item name="Stuffed Toad" chance="10" />
 	</loot>
 </monster>

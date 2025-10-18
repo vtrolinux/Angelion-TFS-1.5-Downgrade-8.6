@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<monster name="Rottie The Rotworm" nameDescription="Rottie The Rotworm" race="blood" experience="40" speed="180">
+<monster name="Rottie the Rotworm" nameDescription="Rottie the Rotworm" race="blood" experience="40" speed="180">
 	<health now="65" max="65" />
 	<look type="26" corpse="5967" />
 	<targetchange interval="2000" chance="0" />
@@ -22,15 +22,15 @@
 	</attacks>
 	<defenses armor="8" defense="11" />
 	<loot>
-		<item id="10609" name="lump of dirt" chance="100000" />
-		<item id="2148" name="gold coin" chance="84211" countmax="18" />
-		<item id="2398" name="mace" chance="63158" />
-		<item id="3976" name="worm" chance="47368" countmax="5" />
-		<item id="2376" name="sword" chance="26316" />
-		<item id="2671" name="ham" chance="21053" />
-		<item id="2530" name="copper shield" chance="15789" />
-		<item id="2666" name="meat" chance="15789" />
-		<item id="2480" name="legion helmet" chance="10526" />
-		<item id="2412" name="katana" chance="5263" />
+		<item name="Lump of Dirt" chance="100000" />
+        	<item name="Gold Coin" countmax="18" chance="84780" />
+        	<item name="Worm" countmax="5" chance="45650" />
+        	<item name="Mace" chance="43480" />
+        	<item name="Sword" chance="28260" />
+        	<item name="Ham" chance="17390" />
+        	<item name="Meat" chance="17390" />
+        	<item name="Copper Shield" chance="15220" />
+        	<item name="Legion Helmet" chance="10870" />
+        	<item name="Katana" chance="8700" />
 	</loot>
 </monster>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<monster name="Quara Constrictor Scout" nameDescription="a quara constrictor scout" race="blood" experience="200" speed="150" manacost="670">
+<monster name="Quara Constrictor Scout" nameDescription="a quara constrictor scout" race="blood" experience="200" speed="150" manacost="600">
 	<health now="450" max="450" />
 	<look type="46" corpse="6065" />
 	<targetchange interval="4000" chance="10" />
@@ -8,7 +8,7 @@
 		<flag attackable="1" />
 		<flag hostile="1" />
 		<flag illusionable="1" />
-		<flag convinceable="0" />
+		<flag convinceable="1" />
 		<flag pushable="0" />
 		<flag canpushitems="1" />
 		<flag canpushcreatures="0" />
@@ -20,7 +20,7 @@
         <flag canwalkonfire="1" />
 	</flags>
 	<attacks>
-		<attack name="melee" interval="2000" min="0" max="-135" />
+		<attack name="melee" interval="2000" min="0" max="-130" />
 		<attack name="lifedrain" interval="2000" chance="15" radius="3" target="0" max="-80">
 			<attribute key="areaEffect" value="blackspark" />
 		</attack>
@@ -29,7 +29,6 @@
 	<elements>
 		<element energyPercent="-10" />
         <element earthPercent="-10" />
-		<element physicalPercent="-5" />
 	</elements>
 	<immunities>
 		<immunity lifedrain="1" />

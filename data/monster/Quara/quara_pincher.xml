@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<monster name="Quara Pincher" nameDescription="a quara pincher" race="blood" experience="1200" speed="396">
+<monster name="Quara Pincher" nameDescription="a quara pincher" race="blood" experience="1500" speed="396" manacost="0">
 	<health now="1800" max="1800" />
 	<look type="77" corpse="6063" />
 	<targetchange interval="4000" chance="10" />
@@ -29,7 +29,6 @@
 	<elements>
 		<element earthPercent="-10" />
 		<element energyPercent="-25" />
-		<element physicalPercent="10" />
 	</elements>
 	<immunities>
 		<immunity lifedrain="1" />
@@ -39,7 +38,7 @@
 		<immunity ice="1" />
 	</immunities>
 	<voices interval="5000" chance="10">
-		<voice sentence="Clank clank!" />
+		<voice sentence="Clank! Clank!" />
 		<voice sentence="Clap!" />
 		<voice sentence="Crrrk! Crrrk!" />
 	</voices>

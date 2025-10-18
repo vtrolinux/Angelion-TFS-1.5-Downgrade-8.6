@@ -11,7 +11,7 @@
 		<flag convinceable="1" />
 		<flag pushable="1" />
 		<flag canpushitems="1" />
-		<flag canpushcreatures="0" />
+		<flag canpushcreatures="1" />
 		<flag targetdistance="4" />
 		<flag staticattack="90" />
 		<flag runonhealth="0" />
@@ -36,15 +36,15 @@
 		<voice sentence="Your head will be mine!" />
 	</voices>
 	<loot>
-		<item name="dagger" chance="80000" />
-		<item id="2229" countmax="2" chance="80000" /><!-- skull -->
-		<item name="gold coin" countmax="20" chance="40000" />
-		<item name="brown bread" chance="30333" />
-		<item name="sabre" chance="23000" />
-		<item name="girlish hair decoration" chance="10000" />
-		<item name="protective charm" chance="5000" />
-		<item id="2050" chance="1005" /><!-- torch -->
-		<item name="crystal necklace" chance="250" />
-		<item name="small ruby" chance="120" />
+		<item name="Skull" countmax="2" chance="80100" />
+        <item name="Dagger" chance="80000" />
+        <item name="Gold Coin" countmax="20" chance="40030" />
+        <item name="Brown Bread" chance="29570" />
+        <item name="Sabre" chance="23220" />
+        <item name="Girlish Hair Decoration" chance="9860" />
+        <item name="Protective Charm" chance="5260" />
+        <item name="Torch" chance="1000" />
+        <item name="Crystal Necklace" chance="240" />
+        <item name="Small Ruby" chance="130" />
 	</loot>
 </monster>
