@@ -38,8 +38,8 @@
 	</voices>
 	<loot>
 		<item name="Skull" countmax="2" chance="88890" />
-        	<item name="Gold Coin" countmax="35" chance="66670" />
-        	<item name="Sabre" chance="66670" />
-        	<item name="Studded Shield" chance="11110" />
+		<item name="Gold Coin" countmax="35" chance="66670" />
+		<item name="Sabre" chance="66670" />
+		<item name="Studded Shield" chance="11110" />
 	</loot>
 </monster>

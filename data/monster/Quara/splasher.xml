@@ -16,8 +16,8 @@
 		<flag targetdistance="1" />
 		<flag runonhealth="40" />
 		<flag canwalkonenergy="0" />
-        	<flag canwalkonpoison="0" />
-        	<flag canwalkonfire="1" />
+		<flag canwalkonfire="1" />
+		<flag canwalkonpoison="0" />
 		<flag isboss="1" />
 	</flags>
 	<attacks>

@@ -16,9 +16,8 @@
 		<flag targetdistance="1" />
 		<flag runonhealth="0" />
 		<flag canwalkonenergy="0" />
-		<flag canwalkonenergy="0" />
-        	<flag canwalkonfire="1" />
-        	<flag canwalkonpoison="1" />
+		<flag canwalkonfire="1" />
+		<flag canwalkonpoison="1" />
 		<flag isboss="1" />
 	</flags>
 	<attacks>
@@ -50,7 +49,7 @@
 		<immunity ice="1" />
 		<immunity earth="1" />
 		<immunity invisible="1" />
-        	<immunity paralyze="1" />
+		<immunity paralyze="1" />
 	</immunities>
 	<summons maxSummons="2">
 		<summon name="Massive Water Elemental" interval="2000" chance="10" max="2" />
@@ -61,12 +60,12 @@
 	</voices>
 	<loot>
 		<item name="Fish Fin" chance="100000" />
-        	<item name="Platinum Coin" countmax="10" chance="89220" />
-        	<item name="Marlin" chance="66670" />
-        	<item name="Great Mana Potion" chance="43140" />
-        	<item name="Small Amethyst" countmax="4" chance="39220" />
-        	<item name="Relic Sword" chance="34310" />
-        	<item name="Crusader Helmet" chance="17650" />
-        	<item name="Crown Armor" chance="7840" />
+		<item name="Platinum Coin" countmax="10" chance="89220" />
+		<item name="Marlin" chance="66670" />
+		<item name="Great Mana Potion" chance="43140" />
+		<item name="Small Amethyst" countmax="4" chance="39220" />
+		<item name="Relic Sword" chance="34310" />
+		<item name="Crusader Helmet" chance="17650" />
+		<item name="Crown Armor" chance="7840" />
 	</loot>
 </monster>

@@ -42,18 +42,18 @@
 	</voices>
 	<loot>
 		<item name="Spear" countmax="3" chance="55440" />
-        <item name="Gold Coin" countmax="12" chance="32520" />
-        <item name="Meat" chance="30110" />
-        <item name="Chain Armor" chance="10160" />
-        <item name="Red Apple" countmax="2" chance="7590" />
-        <item name="Girlish Hair Decoration" chance="6020" />
-        <item name="Hunting Spear" chance="5070" />
-        <item name="Protective Charm" chance="3190" />
-        <item name="Protection Amulet" chance="1090" />
-        <item name="Plate Armor" chance="820" />
-        <item name="Skull" chance="750" />
-        <item name="Health Potion" chance="460" />
-        <item name="Double Axe" chance="400" />
-        <item name="Small Diamond" chance="110" />
+		<item name="Gold Coin" countmax="12" chance="32520" />
+		<item name="Meat" chance="30110" />
+		<item name="Chain Armor" chance="10160" />
+		<item name="Red Apple" countmax="2" chance="7590" />
+		<item name="Girlish Hair Decoration" chance="6020" />
+		<item name="Hunting Spear" chance="5070" />
+		<item name="Protective Charm" chance="3190" />
+		<item name="Protection Amulet" chance="1090" />
+		<item name="Plate Armor" chance="820" />
+		<item name="Skull" chance="750" />
+		<item name="Health Potion" chance="460" />
+		<item name="Double Axe" chance="400" />
+		<item name="Small Diamond" chance="110" />
 	</loot>
 </monster>

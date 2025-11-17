@@ -12,11 +12,11 @@
 		<flag pushable="0" />
 		<flag canpushitems="1" />
 		<flag canpushcreatures="1" />
-		<flag staticattack="90" />
 		<flag targetdistance="1" />
+		<flag staticattack="90" />
 		<flag canwalkonenergy="0" />
+		<flag canwalkonfire="1" />
 		<flag canwalkonpoison="0" />
-        <flag canwalkonfire="1" />
 	</flags>
 	<attacks>
 		<attack name="melee" interval="2000" min="0" max="-80" poison="100" />
@@ -56,11 +56,11 @@
 	</voices>
 	<loot>
 		<item id="2148" name="gold coin" chance="90520" countmax="100" />
-        <item id="2148" name="gold coin" chance="90520" countmax="10" />
+		<item id="2148" name="gold coin" chance="90520" countmax="10" />
 		<item id="12444" name="quara eye" chance="15740" />
 		<item id="2143" name="white pearl" chance="5120" />
 		<item id="2149" name="small emerald" chance="5120" countmax="2" />
-		<item id="2670" name="shrimp" chance="4820" countmax="5"/>
+		<item id="2670" name="shrimp" chance="4820" countmax="5" />
 		<item id="2144" name="black pearl" chance="2990" />
 		<item id="7590" name="great mana potion" chance="2940" />
 		<item id="5895" name="fish fin" chance="1550" />

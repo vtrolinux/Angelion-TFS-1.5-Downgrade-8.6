@@ -31,8 +31,8 @@
 	</elements>
 	<loot>
 		<item name="Gold Coin" countmax="45" chance="57870" />
-        	<item name="Carrion Worm Fang" chance="10000" />
-        	<item name="Meat" chance="9690" />
-        	<item name="Worm" countmax="2" chance="2060" />
+		<item name="Carrion Worm Fang" chance="10000" />
+		<item name="Meat" chance="9690" />
+		<item name="Worm" countmax="2" chance="2060" />
 	</loot>
 </monster>

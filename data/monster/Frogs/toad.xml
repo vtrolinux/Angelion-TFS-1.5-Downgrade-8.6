@@ -12,7 +12,6 @@
 		<flag pushable="1" />
 		<flag canpushitems="1" />
 		<flag canpushcreatures="0" />
-		<flag staticattack="90" />
 		<flag targetdistance="1" />
 		<flag runonhealth="10" />
 		<flag canwalkonenergy="0" />
@@ -36,15 +35,19 @@
 		<element icePercent="20" />
 		<element firePercent="-10" />
 	</elements>
+	<immunities>
+		<immunity invisible="0" />
+		<immunity paralyze="0" />
+	</immunities>
 	<voices interval="5000" chance="10">
-		<voice sentence="Ribbit! Ribbit!" />
-		<voice sentence="Ribbit!" />
+		<voice sentence="Ribbit! Ribbit!" yell="0" />
+		<voice sentence="Ribbit!" yell="0" />
 	</voices>
 	<loot>
-		<item name="gold coin" countmax="20" chance="82260" />
-		<item name="war hammer" chance="120" />
-		<item name="mace" chance="2940" />
-		<item id="2667" chance="19590" /><!-- fish -->
-		<item name="poisonous slime" chance="4860" />
+		<item name="Gold Coin" countmax="20" chance="82240" />
+		<item name="Fish" chance="19620" />
+		<item name="Poisonous Slime" chance="4870" />
+		<item name="Mace" chance="2940" />
+		<item name="War Hammer" chance="120" />
 	</loot>
 </monster>

@@ -12,8 +12,8 @@
 		<flag pushable="0" />
 		<flag canpushitems="1" />
 		<flag canpushcreatures="0" />
-		<flag staticattack="90" />
 		<flag targetdistance="1" />
+		<flag staticattack="90" />
 		<flag runonhealth="30" />
 		<flag canwalkonenergy="0" />
 		<flag canwalkonpoison="0" />
@@ -52,7 +52,7 @@
 		<item id="2148" name="gold coin" chance="87662" countmax="100" />
 		<item id="12443" name="quara tentacle" chance="14468" />
 		<item id="2397" name="longsword" chance="6830" />
-		<item id="2670" name="shrimp" chance="5150" countmax="5"/>
+		<item id="2670" name="shrimp" chance="5150" countmax="5" />
 		<item id="2465" name="brass armor" chance="4850" />
 		<item id="2150" name="small amethyst" chance="3042" />
 		<item id="5895" name="fish fin" chance="510" />

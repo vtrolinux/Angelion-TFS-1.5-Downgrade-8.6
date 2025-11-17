@@ -28,11 +28,11 @@
 		<element firePercent="-10" />
 	</elements>
 	<voices interval="5000" chance="10">
-		<voice sentence="Ribbit!" />
-		<voice sentence="Ribbit! Ribbit!" />
+		<voice sentence="Ribbit! Ribbit!" yell="0" />
+		<voice sentence="Ribbit!" yell="0" />
 	</voices>
 	<loot>
-		<item name="gold coin" countmax="10" chance="75540" />
-		<item name="worm" chance="9810" />
+		<item name="Gold Coin" countmax="10" chance="75560" />
+		<item name="Worm" chance="9800" />
 	</loot>
 </monster>
