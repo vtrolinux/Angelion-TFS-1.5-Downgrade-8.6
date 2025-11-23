@@ -7,15 +7,17 @@
 		<flag summonable="0" />
 		<flag attackable="1" />
 		<flag hostile="1" />
-		<flag illusionable="1" />
+		<flag illusionable="0" />
 		<flag convinceable="0" />
 		<flag pushable="0" />
 		<flag canpushitems="1" />
 		<flag canpushcreatures="1" />
 		<flag targetdistance="1" />
 		<flag staticattack="90" />
+		<flag runonhealth="0" />
 		<flag canwalkonenergy="0" />
 		<flag canwalkonfire="0" />
+		<flag canwalkonpoison="1" />
 	</flags>
 	<attacks>
 		<attack name="melee" interval="2000" min="0" max="-120" poison="160" />
@@ -38,26 +40,25 @@
 		</defense>
 	</defenses>
 	<elements>
-		<element firePercent="-5" />
-		<element holyPercent="5" />
+		<element holyPercent="10" />
+		<element firePercent="-10" />
 	</elements>
 	<immunities>
-		<immunity paralyze="1" />
-		<immunity invisible="1" />
 		<immunity death="1" />
 		<immunity earth="1" />
-		<immunity lifedrain="1" />
-		<immunity drunk="1" />
+		<immunity invisible="1" />
+		<immunity paralyze="1" />
 	</immunities>
 	<loot>
-		<item id="2148" name="gold coin" chance="96855" countmax="140" />
-		<item id="11328" name="widow's mandibles" chance="19966" />
-		<item id="7620" name="mana potion" chance="5251" />
-		<item id="7618" name="health potion" chance="4942" />
-		<item id="2381" name="halberd" chance="4708" />
-		<item id="2510" name="plate shield" chance="3173" />
-		<item id="2796" name="green mushroom" chance="2986" />
-		<item id="11323" name="zaoan halberd" chance="2256" />
-		<item id="11329" name="wailing widow's necklace" chance="683" />
+		<item name="Gold Coin" countmax="100" chance="96860" />
+		<item name="Gold Coin" countmax="40" chance="96860" />
+		<item name="Widow's Mandibles" chance="20160" />
+		<item name="Mana Potion" chance="5060" />
+		<item name="Health Potion" chance="4980" />
+		<item name="Halberd" chance="4720" />
+		<item name="Plate Shield" chance="3120" />
+		<item name="Green Mushroom" chance="2950" />
+		<item name="Zaoan Halberd" chance="2220" />
+		<item name="Wailing Widow's Necklace" chance="680" />
 	</loot>
 </monster>

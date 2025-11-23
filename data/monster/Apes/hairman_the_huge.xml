@@ -19,16 +19,18 @@
 	</flags>
 	<attacks>
 		<attack name="melee" interval="2000" min="0" max="-110" />
+		<attack name="physical" interval="2000" chance="35" range="7" min="-30" max="-100">
+			<attribute key="shootEffect" value="smallstone" />
+		</attack>
 	</attacks>
 	<defenses armor="25" defense="25">
-		<defense name="speed" interval="1000" chance="7" speedchange="260" duration="3000">
-			<attribute key="areaEffect" value="redshimmer" />
+		<defense name="healing" interval="2000" chance="25" min="25" max="50">
+			<attribute key="areaEffect" value="blueshimmer" />
 		</defense>
 	</defenses>
 	<elements>
 		<element physicalPercent="1" />
 		<element deathPercent="-1" />
-		<element holyPercent="0" />
 		<element icePercent="-1" />
 		<element firePercent="25" />
 		<element energyPercent="20" />
@@ -47,11 +49,12 @@
 		<summon name="Kongra" interval="2000" chance="25" />
 	</summons>
 	<loot>
-		<item name="gold coin" countmax="60" chance="50000" />
-		<item name="power ring" chance="7500" />
-		<item name="protection amulet" chance="3000" />
-		<item name="plate armor" chance="5000" />
-		<item id="2676" name="banana" countmax="2" chance="7500" />
-		<item name="ape fur" chance="2500" />
+		<item name="Gold Coin" countmax="60" chance="92310" />
+		<item name="Banana" countmax="2" chance="28570" />
+		<item name="Ape Fur" chance="21430" />
+		<item name="Club Ring" chance="14290" />
+		<item name="Plate Armor" chance="5000" />
+		<item name="Power Ring" chance="7500" />
+		<item name="Protection Amulet" chance="3000" />
 	</loot>
 </monster>

@@ -26,23 +26,22 @@
 		</defense>
 	</defenses>
 	<elements>
-		<element energyPercent="10" />
-		<element firePercent="-15" />
-		<element icePercent="-15" />
 		<element physicalPercent="40" />
+		<element icePercent="-15" />
+		<element firePercent="-15" />
+		<element energyPercent="10" />
 	</elements>
 	<immunities>
-		<immunity outfit="1" />
-		<immunity drunk="1" />
-		<immunity invisible="1" />
 		<immunity earth="1" />
+		<immunity invisible="1" />
+		<immunity paralyze="1" />
 	</immunities>
 	<loot>
-		<item name="platinum coin" countmax="5" chance="100000" />
-		<item id="2169" chance="33333" /><!-- time ring -->
-		<item name="steel helmet" chance="50000" />
-		<item name="knight legs" chance="50000" />
-		<item name="spider silk" chance="50000" />
-		<item name="terra hood" chance="50000" />
+		<item name="Time Ring" chance="88350" />
+		<item name="Platinum Coin" countmax="8" chance="82520" />
+		<item name="Steel Helmet" chance="71840" />
+		<item name="Spider Silk" countmax="2" chance="63110" />
+		<item name="Knight Legs" chance="34000" />
+		<item name="Terra Hood" chance="29000" />
 	</loot>
 </monster>

@@ -17,6 +17,7 @@
 		<flag runonhealth="6" />
 		<flag canwalkonenergy="0" />
 		<flag canwalkonfire="0" />
+		<flag canwalkonpoison="1" />
 	</flags>
 	<attacks>
 		<attack name="melee" interval="2000" min="0" max="-20" poison="30" />
@@ -29,7 +30,7 @@
 		<immunity earth="1" />
 	</immunities>
 	<loot>
-		<item name="gold coin" countmax="4" chance="75000" />
-		<item name="poison spider shell" chance="1140" />
+		<item name="Gold Coin" countmax="4" chance="74660" />
+		<item name="Poison Spider Shell" chance="1050" />
 	</loot>
 </monster>

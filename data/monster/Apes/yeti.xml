@@ -15,6 +15,9 @@
 		<flag targetdistance="1" />
 		<flag staticattack="90" />
 		<flag runonhealth="0" />
+		<flag canwalkonenergy="0" />
+		<flag canwalkonfire="0" />
+		<flag canwalkonpoison="0" />
 	</flags>
 	<attacks>
 		<attack name="melee" interval="2000" min="0" max="-200" />
@@ -28,21 +31,22 @@
 	</attacks>
 	<defenses armor="28" defense="28" />
 	<elements>
-		<element icePercent="-1" />
+		<element firePercent="-10" />
+		<element energyPercent="-8" />
 	</elements>
 	<immunities>
 		<immunity invisible="1" />
 	</immunities>
 	<voices interval="5000" chance="10">
-		<voice sentence="Yooodelaaahooohooo!" />
-		<voice sentence="Yooodelaaaheeeheee!" />
+		<voice sentence="Yooodelaaaheehee" yell="0" />
+		<voice sentence="Yooodelaaahooohooo" yell="0" />
 	</voices>
 	<loot>
-		<item id="2148" name="gold coin" chance="79310" countmax="27" />
-		<item id="2666" name="meat" chance="71264" />
-		<item id="2111" name="snowball" chance="52874" countmax="22" />
-		<item id="2671" name="ham" chance="39080" />
-		<item id="2644" name="bunnyslippers" chance="1149" />
-		<item id="2129" name="wolf tooth chain" chance="1149" />
+		<item name="Gold Coin" countmax="30" chance="77570" />
+		<item name="Meat" coutnax="4" chance="70090" />
+		<item name="Snowball" countmax="22" chance="53270" />
+		<item name="Ham" countmax="6" chance="37380" />
+		<item name="Bunnyslippers" chance="930" />
+		<item name="Wolf Tooth Chain" chance="930" />
 	</loot>
 </monster>

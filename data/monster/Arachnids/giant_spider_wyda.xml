@@ -23,7 +23,7 @@
 		<event name="GiantSpiderWyda" />
 	</script>
 	<attacks>
-		<attack name="melee" interval="2000" min="0" max="-9" />
+		<attack name="melee" interval="2000" min="0" max="-20" />
 	</attacks>
 	<defenses armor="2" defense="2" />
 	<elements>
@@ -31,6 +31,5 @@
 	</elements>
 	<loot>
 		<item name="gold coin" countmax="5" chance="65000" />
-		<item name="spider fangs" chance="950" />
 	</loot>
 </monster>

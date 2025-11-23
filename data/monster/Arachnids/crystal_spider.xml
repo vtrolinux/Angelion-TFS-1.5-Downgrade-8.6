@@ -7,7 +7,7 @@
 		<flag summonable="0" />
 		<flag attackable="1" />
 		<flag hostile="1" />
-		<flag illusionable="1" />
+		<flag illusionable="0" />
 		<flag convinceable="0" />
 		<flag pushable="0" />
 		<flag canpushitems="1" />
@@ -15,6 +15,8 @@
 		<flag targetdistance="1" />
 		<flag runonhealth="0" />
 		<flag canwalkonenergy="0" />
+		<flag canwalkonfire="1" />
+		<flag canwalkonpoison="1" />
 	</flags>
 	<attacks>
 		<attack name="melee" interval="2000" min="0" max="-250" poison="160" />
@@ -35,38 +37,37 @@
 		</defense>
 	</defenses>
 	<elements>
-		<element earthPercent="20" />
 		<element energyPercent="-20" />
+		<element earthPercent="20" />
 	</elements>
 	<immunities>
-		<immunity fire="1" />
 		<immunity ice="1" />
-		<immunity paralyze="1" />
-		<immunity outfit="1" />
-		<immunity drunk="1" />
+		<immunity fire="1" />
 		<immunity invisible="1" />
+		<immunity paralyze="1" />
 	</immunities>
 	<voices interval="5000" chance="10">
-		<voice sentence="Screeech!" />
+		<voice sentence="Screeech!" yell="0" />
 	</voices>
 	<loot>
-		<item id="2148" name="gold coin" chance="100000" countmax="197" />
-		<item id="7589" name="strong mana potion" chance="14973" />
-		<item id="2463" name="plate armor" chance="9929" />
-		<item id="7364" name="sniper arrow" chance="5874" countmax="6" />
-		<item id="3351" name="steel helmet" chance="5164" />
-		<item id="7441" name="ice cube" chance="4906" />
-		<item id="7449" name="crystal sword" chance="2517" />
-		<item id="5879" name="spider silk" chance="1983" />
-		<item id="2125" name="crystal necklace" chance="1640" />
-		<item id="2124" name="crystal ring" chance="1587" />
-		<item id="2169" name="time ring" chance="1485" />
-		<item id="2477" name="knight legs" chance="747" />
-		<item id="7290" name="shard" chance="717" />
-		<item id="7902" name="glacier mask" chance="664" />
-		<item id="2476" name="knight armor" chance="559" />
-		<item id="7437" name="sapphire hammer" chance="142" />
-		<item id="2171" name="platinum amulet" chance="123" />
-		<item id="5801" name="jewelled backpack" chance="83" />
+		<item name="Gold Coin" countmax="100" chance="100000" />
+		<item name="Gold Coin" countmax="97" chance="100000" />
+		<item name="Strong Mana Potion" chance="15010" />
+		<item name="Plate Armor" chance="9900" />
+		<item name="Sniper Arrow" countmax="6" chance="5910" />
+		<item name="Steel Helmet" chance="5160" />
+		<item name="Ice Cube" chance="4900" />
+		<item name="Crystal Sword" chance="2520" />
+		<item name="Spider Silk" chance="1980" />
+		<item name="Crystal Necklace" chance="1620" />
+		<item name="Crystal Ring" chance="1590" />
+		<item name="Time Ring" chance="1490" />
+		<item name="Knight Legs" chance="760" />
+		<item name="Shard" chance="720" />
+		<item name="Glacier Mask" chance="660" />
+		<item name="Knight Armor" chance="550" />
+		<item name="Sapphire Hammer" chance="140" />
+		<item name="Platinum Amulet" chance="120" />
+		<item name="Jewelled Backpack" chance="80" />
 	</loot>
 </monster>

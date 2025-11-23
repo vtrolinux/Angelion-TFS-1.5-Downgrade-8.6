@@ -19,7 +19,7 @@
 		<flag canwalkonpoison="0" />
 	</flags>
 	<attacks>
-		<attack name="melee" interval="2000" min="0" max="-240" />
+		<attack name="melee" interval="2000" min="0" max="-200" />
 	</attacks>
 	<defenses armor="9" defense="9">
 		<defense name="speed" interval="2000" chance="15" speedchange="240" duration="5000">
@@ -28,30 +28,30 @@
 	</defenses>
 	<elements>
 		<element physicalPercent="10" />
+		<element deathPercent="-10" />
+		<element holyPercent="20" />
+		<element icePercent="50" />
 		<element energyPercent="10" />
 		<element earthPercent="-5" />
-		<element icePercent="50" />
-		<element holyPercent="20" />
-		<element deathPercent="-10" />
 	</elements>
 	<voices interval="5000" chance="10">
-		<voice sentence="YAAAHEEE!" />
-		<voice sentence="SLAUGHTER!" />
-		<voice sentence="CARNAGE!" />
-		<voice sentence="You can run but you can't hide" />
+		<voice sentence="YAAAHEEE!" yell="1" />
+		<voice sentence="SLAUGHTER!" yell="1" />
+		<voice sentence="CARNAGE!" yell="1" />
+		<voice sentence="You can run but you can't hide" yell="0" />
 	</voices>
 	<loot>
-		<item id="2148" name="gold coin" chance="55130" countmax="12" />
-		<item id="2458" name="chain helmet" chance="10639" />
-		<item id="2464" name="chain armor" chance="10270" />
-		<item id="2044" name="lamp" chance="8135" />
-		<item id="2381" name="halberd" chance="7013" />
-		<item id="2378" name="battle axe" chance="5934" />
-		<item id="2671" name="ham" chance="4955" />
-		<item id="7618" name="health potion" chance="950" />
-		<item id="5911" name="red piece of cloth" chance="504" />
-		<item id="3962" name="beastslayer axe" chance="350" />
-		<item id="7290" name="shard" chance="317" />
-		<item id="7457" name="fur boots" chance="86" />
+		<item name="Gold Coin" countmax="12" chance="55170" />
+		<item name="Chain Helmet" chance="10690" />
+		<item name="Chain Armor" chance="10160" />
+		<item name="Lamp" chance="8150" />
+		<item name="Halberd" chance="6920" />
+		<item name="Battle Axe" chance="5960" />
+		<item name="Ham" chance="4930" />
+		<item name="Health Potion" chance="930" />
+		<item name="Red Piece of Cloth" chance="490" />
+		<item name="Beastslayer Axe" chance="350" />
+		<item name="Shard" chance="310" />
+		<item name="Fur Boots" chance="80" />
 	</loot>
 </monster>

@@ -24,12 +24,11 @@
 		<element firePercent="-20" />
 	</elements>
 	<immunities>
-		<immunity outfit="1" />
-		<immunity drunk="1" />
 		<immunity invisible="1" />
+		<immunity paralyze="1" />
 	</immunities>
 	<voices interval="2000" chance="5">
-		<voice sentence="Hugah!" />
-		<voice sentence="Ungh! Ungh!" />
+		<voice sentence="Ungh! Ungh!" yell="0" />
+		<voice sentence="Hugah!" yell="0" />
 	</voices>
 </monster>

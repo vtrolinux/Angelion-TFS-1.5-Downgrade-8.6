@@ -11,15 +11,27 @@
 		<flag pushable="0" />
 		<flag canpushitems="1" />
 		<flag targetdistance="1" />
+		<flag runonhealth="0" />
 		<flag canwalkonenergy="0" />
+		<flag canwalkonfire="1" />
+		<flag canwalkonpoison="1" />
 	</flags>
 	<attacks>
-		<attack name="melee" interval="2000" min="0" max="-250" />
-		<attack name="speed" interval="3500" chance="65" radius="1" target="1" range="1" duration="40" speedchange="-500">
-			<attribute key="areaEffect" value="redshimmer" />
-		</attack>
-		<attack name="energy" interval="3000" chance="75" min="-13" max="-80" range="7">
+		<attack name="melee" interval="2000" min="0" max="-265" poison="120"/>
+		<attack name="energy" interval="3000" chance="75" target="1" range="7" min="-49" max="-116">
 			<attribute key="shootEffect" value="energy" />
+			<attribute key="areaEffect" value="blackspark" />
+		</attack>
+		attack name="energy" interval="3000" chance="75" target="1" range="7" min="-106" max="-163">
+			<attribute key="shootEffect" value="poison" />
+			<attribute key="areaEffect" value="redspark" />
+		</attack>
+		<attack name="speed" interval="3000" chance="75" target="1" range="7" duration="40" speedchange="-500">
+			<attribute key="shootEffect" value="energy" />
+			<attribute key="areaEffect" value="blackspark" />
+		</attack>
+		<attack name="speed" interval="3000" chance="75" range="7" radius="6" target="0" speedchange="-800" duration="15000">
+			<attribute key="areaEffect" value="poff" />
 		</attack>
 	</attacks>
 	<defenses armor="29" defense="34">
@@ -28,16 +40,17 @@
 		</defense>
 	</defenses>
 	<elements>
-		<element energyPercent="-20" />
+		<element energyPercent="-1" />
 	</elements>
 	<immunities>
 		<immunity ice="1" />
-		<immunity outfit="1" />
-		<immunity drunk="1" />
 		<immunity invisible="1" />
+		<immunity paralyze="1" />
 	</immunities>
 	<voices interval="2000" chance="5">
-		<voice sentence="You are lost!" />
-		<voice sentence="Come my little morsel." />
+		<voice sentence="I'll get you!" yell="0" />
+		<voice sentence="So tasty!" yell="0" />
+		<voice sentence="Come my little morsel." yell="0" />
+		<voice sentence="You are lost." yell="0" />
 	</voices>
 </monster>
