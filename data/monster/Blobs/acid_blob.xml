@@ -17,6 +17,7 @@
 		<flag runonhealth="0" />
 		<flag canwalkonenergy="0" />
 		<flag canwalkonfire="0" />
+		<flag canwalkonpoison="1" />
 	</flags>
 	<attacks>
 		<attack name="melee" interval="2000" min="0" max="-80" />
@@ -31,6 +32,11 @@
 		</attack>
 	</attacks>
 	<defenses armor="15" defense="15" />
+	<elements>
+		<element icePercent="20" />
+		<element firePercent="-10" />
+		<element energyPercent="-10" />
+	</elements>
 	<immunities>
 		<immunity death="1" />
 		<immunity earth="1" />
@@ -39,9 +45,9 @@
 		<summon name="Acid Blob" interval="2000" chance="10" />
 	</summons>
 	<voices interval="5000" chance="10">
-		<voice sentence="Kzzchhh!" />
+		<voice sentence="Kzzchhhh" yell="0" />
 	</voices>
 	<loot>
-		<item name="glob of acid slime" chance="14285" />
+		<item name="Glob of Acid Slime" chance="19250" />
 	</loot>
 </monster>

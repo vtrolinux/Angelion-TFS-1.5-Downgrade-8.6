@@ -4049,7 +4049,7 @@
 		<attribute key="defense" value="33" />
 		<attribute key="weaponType" value="shield" />
 	</item>
-	<item id="2518" article="a" name="bonelord shield">
+	<item id="2518" article="a" name="beholder shield">
 		<attribute key="weight" value="4700" />
 		<attribute key="defense" value="28" />
 		<attribute key="weaponType" value="shield" />
@@ -5406,20 +5406,20 @@
 		<attribute key="duration" value="3600" />
 		<attribute key="corpseType" value="blood" />
 	</item>
-	<item id="2908" article="a" name="dead bonelord">
+	<item id="2908" article="a" name="dead beholder">
 		<attribute key="containerSize" value="32" />
 		<attribute key="decayTo" value="2909" />
 		<attribute key="duration" value="600" />
 		<attribute key="corpseType" value="venom" />
 		<attribute key="fluidSource" value="slime" />
 	</item>
-	<item id="2909" article="a" name="dead bonelord">
+	<item id="2909" article="a" name="dead beholder">
 		<attribute key="containerSize" value="32" />
 		<attribute key="decayTo" value="2910" />
 		<attribute key="duration" value="600" />
 		<attribute key="corpseType" value="venom" />
 	</item>
-	<item id="2910" article="a" name="dead bonelord">
+	<item id="2910" article="a" name="dead beholder">
 		<attribute key="decayTo" value="0" />
 		<attribute key="duration" value="600" />
 		<attribute key="corpseType" value="venom" />
@@ -6284,19 +6284,19 @@
 		<attribute key="duration" value="600" />
 		<attribute key="corpseType" value="venom" />
 	</item>
-	<item id="3052" article="a" name="dead elder bonelord">
+	<item id="3052" article="a" name="dead elder beholder">
 		<attribute key="containerSize" value="38" />
 		<attribute key="decayTo" value="3053" />
 		<attribute key="duration" value="600" />
 		<attribute key="corpseType" value="venom" />
 		<attribute key="fluidSource" value="slime" />
 	</item>
-	<item id="3053" article="a" name="dead elder bonelord">
+	<item id="3053" article="a" name="dead elder beholder">
 		<attribute key="decayTo" value="3054" />
 		<attribute key="duration" value="600" />
 		<attribute key="corpseType" value="venom" />
 	</item>
-	<item id="3054" article="a" name="dead elder bonelord">
+	<item id="3054" article="a" name="dead elder beholder">
 		<attribute key="decayTo" value="0" />
 		<attribute key="duration" value="600" />
 		<attribute key="corpseType" value="venom" />
@@ -7391,7 +7391,7 @@
 		<attribute key="armor" value="2" />
 		<attribute key="slotType" value="head" />
 	</item>
-	<item id="3972" article="a" name="bonelord helmet">
+	<item id="3972" article="a" name="beholder helmet">
 		<attribute key="weight" value="4600" />
 		<attribute key="armor" value="7" />
 		<attribute key="slotType" value="head" />
@@ -9364,7 +9364,7 @@
 	<item id="5897" article="a" name="wolf paw">
 		<attribute key="weight" value="80" />
 	</item>
-	<item id="5898" article="a" name="bonelord eye">
+	<item id="5898" article="a" name="beholder eye">
 		<attribute key="description" value="You could swear it just winked at you." />
 		<attribute key="weight" value="500" />
 	</item>
@@ -9812,7 +9812,7 @@
 		<attribute key="corpseType" value="blood" />
 		<attribute key="fluidSource" value="blood" />
 	</item>
-	<item id="5992" article="a" name="dead bonelord">
+	<item id="5992" article="a" name="dead beholder">
 		<attribute key="containerSize" value="32" />
 		<attribute key="decayTo" value="2908" />
 		<attribute key="duration" value="10" />
@@ -10110,7 +10110,7 @@
 		<attribute key="corpseType" value="venom" />
 		<attribute key="fluidSource" value="slime" />
 	</item>
-	<item id="6037" article="a" name="dead elder bonelord">
+	<item id="6037" article="a" name="dead elder beholder">
 		<attribute key="containerSize" value="38" />
 		<attribute key="decayTo" value="3052" />
 		<attribute key="duration" value="10" />
@@ -19710,7 +19710,7 @@
 	<item id="11192" article="a" name="carrion worm fang">
 		<attribute key="weight" value="88" />
 	</item>
-	<item id="11193" article="an" name="elder bonelord tentacle">
+	<item id="11193" article="an" name="elder beholder tentacle">
 		<attribute key="weight" value="75" />
 	</item>
 	<item id="11194" article="a" name="bony tail">

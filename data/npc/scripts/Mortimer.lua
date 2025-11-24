@@ -42,8 +42,8 @@ local function creatureSayCallback(cid, type, msg)
         if player:getStorageValue(Storage.ExplorerSociety.JoiningtheExplorers) > 3 and player:getStorageValue(Storage.ExplorerSociety.QuestLine) > 3 and player:getStorageValue(Storage.ExplorerSociety.ThePlantCollection) < 26 and player:getStorageValue(Storage.ExplorerSociety.QuestLine) < 26 or player:getStorageValue(Storage.ExplorerSociety.TheIceDelivery) == 7 and player:getStorageValue(Storage.ExplorerSociety.QuestLine) == 7 or player:getStorageValue(Storage.ExplorerSociety.TheButterflyHunt) == 16 and player:getStorageValue(Storage.ExplorerSociety.QuestLine) == 16 or player:getStorageValue(Storage.ExplorerSociety.JoiningtheExplorers) == 4 and player:getStorageValue(Storage.ExplorerSociety.QuestLine) == 4 then
             npcHandler:say("The missions available for your rank are the {butterfly hunt}, {plant collection} and {ice delivery}.", cid)
             npcHandler.topic[cid] = 0
-        elseif player:getStorageValue(Storage.ExplorerSociety.ThePlantCollection) > 25 and player:getStorageValue(Storage.ExplorerSociety.QuestLine) > 35 and player:getStorageValue(Storage.ExplorerSociety.TheOrcPowder) < 35 and player:getStorageValue(Storage.ExplorerSociety.QuestLine) < 35 or player:getStorageValue(Storage.ExplorerSociety.ThePlantCollection) == 26 and player:getStorageValue(Storage.ExplorerSociety.QuestLine) == 26 or player:getStorageValue(Storage.ExplorerSociety.TheLizardUrn) == 29  and player:getStorageValue(Storage.ExplorerSociety.QuestLine) == 29 or player:getStorageValue(Storage.ExplorerSociety.TheBonelordSecret) == 32 and player:getStorageValue(Storage.ExplorerSociety.QuestLine) == 32 then
-            npcHandler:say("The missions available for your rank are {lizard urn}, {bonelord secrets} and {orc powder}.", cid)
+        elseif player:getStorageValue(Storage.ExplorerSociety.ThePlantCollection) > 25 and player:getStorageValue(Storage.ExplorerSociety.QuestLine) > 35 and player:getStorageValue(Storage.ExplorerSociety.TheOrcPowder) < 35 and player:getStorageValue(Storage.ExplorerSociety.QuestLine) < 35 or player:getStorageValue(Storage.ExplorerSociety.ThePlantCollection) == 26 and player:getStorageValue(Storage.ExplorerSociety.QuestLine) == 26 or player:getStorageValue(Storage.ExplorerSociety.TheLizardUrn) == 29  and player:getStorageValue(Storage.ExplorerSociety.QuestLine) == 29 or player:getStorageValue(Storage.ExplorerSociety.ThebeholderSecret) == 32 and player:getStorageValue(Storage.ExplorerSociety.QuestLine) == 32 then
+            npcHandler:say("The missions available for your rank are {lizard urn}, {beholder secrets} and {orc powder}.", cid)
             npcHandler.topic[cid] = 0
         elseif player:getStorageValue(Storage.ExplorerSociety.TheOrcPowder) > 34 and player:getStorageValue(Storage.ExplorerSociety.QuestLine) > 34 and player:getStorageValue(Storage.ExplorerSociety.TheRuneWritings) < 44 and player:getStorageValue(Storage.ExplorerSociety.QuestLine) < 44 or player:getStorageValue(Storage.ExplorerSociety.TheOrcPowder) == 35 and player:getStorageValue(Storage.ExplorerSociety.QuestLine) == 35 or player:getStorageValue(Storage.ExplorerSociety.TheElvenPoetry) == 38 and player:getStorageValue(Storage.ExplorerSociety.QuestLine) == 38 or player:getStorageValue(Storage.ExplorerSociety.TheMemoryStone) == 41 and player:getStorageValue(Storage.ExplorerSociety.QuestLine) == 41 then
             npcHandler:say("The missions available for your rank are {elven poetry}, {memory stone} and {rune writings}.", cid)
@@ -194,24 +194,24 @@ local function creatureSayCallback(cid, type, msg)
         end
         -- LIZARD URN
 
-        -- BONELORDS
-    elseif msgcontains(msg, "bonelord secrets") then
+        -- beholderS
+    elseif msgcontains(msg, "beholder secrets") then
         if player:getStorageValue(Storage.ExplorerSociety.TheLizardUrn) == 29  and player:getStorageValue(Storage.ExplorerSociety.QuestLine) == 29 then
             npcHandler:say({
-                "We want to learn more about the ancient race of bonelords. We believe the black pyramid north east of Darashia was originally built by them ...",
-                "We ask you to explore the ruins of the black pyramid and look for any signs that prove our theory. You might probably find some document with the numeric bonelord language ...",
+                "We want to learn more about the ancient race of beholders. We believe the black pyramid north east of Darashia was originally built by them ...",
+                "We ask you to explore the ruins of the black pyramid and look for any signs that prove our theory. You might probably find some document with the numeric beholder language ...",
                 "That would be sufficient proof. Would you like to accept this mission?"
             }, cid)
             npcHandler.topic[cid] = 17
-        elseif player:getStorageValue(Storage.ExplorerSociety.TheBonelordSecret) == 31 and player:getStorageValue(Storage.ExplorerSociety.QuestLine) == 30 then
-            npcHandler:say("Have you found any proof that the pyramid was built by bonelords?", cid)
+        elseif player:getStorageValue(Storage.ExplorerSociety.ThebeholderSecret) == 31 and player:getStorageValue(Storage.ExplorerSociety.QuestLine) == 30 then
+            npcHandler:say("Have you found any proof that the pyramid was built by beholders?", cid)
             npcHandler.topic[cid] = 18
         end
-        -- BONELORDS
+        -- beholderS
 
         -- ORC POWDER
     elseif msgcontains(msg, "orc powder") then
-        if player:getStorageValue(Storage.ExplorerSociety.TheBonelordSecret) == 32 and player:getStorageValue(Storage.ExplorerSociety.QuestLine) == 32 then
+        if player:getStorageValue(Storage.ExplorerSociety.ThebeholderSecret) == 32 and player:getStorageValue(Storage.ExplorerSociety.QuestLine) == 32 then
             npcHandler:say({
                 "It is commonly known that orcs of Uldereks Rock use some sort of powder to increase the fierceness of their war wolves and berserkers ...",
                 "What we do not know are the ingredients of this powder and its effect on humans ...",
@@ -398,11 +398,11 @@ local function creatureSayCallback(cid, type, msg)
             end
             -- LIZARD URN
 
-            -- BONELORDS
+            -- beholderS
         elseif npcHandler.topic[cid] == 17 then
-            player:setStorageValue(Storage.ExplorerSociety.TheBonelordSecret, 30)
+            player:setStorageValue(Storage.ExplorerSociety.ThebeholderSecret, 30)
 			player:setStorageValue(Storage.ExplorerSociety.QuestLine, 30)
-            player:setStorageValue(Storage.ExplorerSociety.bonelordsDoor, 1)
+            player:setStorageValue(Storage.ExplorerSociety.beholdersDoor, 1)
             npcHandler:say({
                 "Excellent! So travel to the city of Darashia and then head north-east for the pyramid ...",
                 "If any documents are left, you probably find them in the catacombs beneath. Good luck!"
@@ -410,12 +410,12 @@ local function creatureSayCallback(cid, type, msg)
             npcHandler.topic[cid] = 0
         elseif npcHandler.topic[cid] == 18 then
             if player:removeItem(4857, 1) then
-                player:setStorageValue(Storage.ExplorerSociety.TheBonelordSecret, 32)
+                player:setStorageValue(Storage.ExplorerSociety.ThebeholderSecret, 32)
 				player:setStorageValue(Storage.ExplorerSociety.QuestLine, 32)
                 npcHandler:say("You did it! Excellent! The scientific world will be shaken by this discovery!", cid)
                 npcHandler.topic[cid] = 0
             end
-            -- BONELORDS
+            -- beholderS
 
             -- ORC POWDER
         elseif npcHandler.topic[cid] == 19 then

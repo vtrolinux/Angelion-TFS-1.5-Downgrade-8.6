@@ -17,6 +17,7 @@
 		<flag runonhealth="0" />
 		<flag canwalkonenergy="0" />
 		<flag canwalkonfire="0" />
+		<flag canwalkonpoison="1" />
 		<flag isboss="1" />
 	</flags>
 	<attacks>
@@ -49,23 +50,24 @@
 		</defense>
 	</defenses>
 	<elements>
-		<element icePercent="20" />
 		<element physicalPercent="5" />
-		<element energyPercent="90" />
 		<element holyPercent="-5" />
+		<element icePercent="20" />
+		<element energyPercent="90" />
 	</elements>
 	<immunities>
 		<immunity earth="1" />
 		<immunity death="1" />
 		<immunity invisible="1" />
+		<immunity paralyze="1" />
 	</immunities>
 	<summons maxSummons="1">
 		<summon name="vampire" interval="2000" chance="40" max="1" />
 	</summons>
 	<voices interval="5000" chance="10">
-		<voice sentence="You won't stop my masterplan to flood the world market with fake Bonelord language dictionaries!" />
-		<voice sentence="My calculations tell me you'll die!" />
-		<voice sentence="You can't stop me!" />
-		<voice sentence="Beware! My evil monolog is coming!" />
+		<voice sentence="My calculations tell me you'll die!" yell="0" />
+		<voice sentence="You can't stop me!" yell="0" />
+		<voice sentence="Beware! My evil monolog is coming!" yell="0" />
+		<voice sentence="You won't stop my masterplan to flood the world market with fake Bonelord language dictionaries!" yell="0" />
 	</voices>
 </monster>

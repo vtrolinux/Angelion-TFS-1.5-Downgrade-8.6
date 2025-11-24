@@ -628,7 +628,7 @@ keywordHandler:addKeyword({'oswald'}, StdModule.say, {npcHandler = npcHandler, t
 keywordHandler:addKeyword({'dungeon'}, StdModule.say, {npcHandler = npcHandler, text = 'If you are a bad jester, you get a chance to visit them now and then.'})
 keywordHandler:addKeyword({'mino'}, StdModule.say, {npcHandler = npcHandler, text = 'What do all little minotaurs want to become when they are grown-ups? ... Cowboys, of course!'})
 keywordHandler:addKeyword({'troll'}, StdModule.say, {npcHandler = npcHandler, text = 'Why do trolls live underground? ... Because there are so many pks on the surface!'})
-keywordHandler:addKeyword({'bonelord'}, StdModule.say, {npcHandler = npcHandler, text = 'Why are bonelords so ugly? ... Because their mom and dad were bonelords, too!'})
+keywordHandler:addKeyword({'beholder'}, StdModule.say, {npcHandler = npcHandler, text = 'Why are beholders so ugly? ... Because their mom and dad were beholders, too!'})
 keywordHandler:addKeyword({'rat'}, StdModule.say, {npcHandler = npcHandler, text = 'Why does the rat have a wooden leg? ... Because it is a former pirate!'})
 keywordHandler:addKeyword({'spider'}, StdModule.say, {npcHandler = npcHandler, text = 'Why did the spider cross the road? ... Because it ... oh you already know this one!?'})
 keywordHandler:addKeyword({'hugo'}, StdModule.say, {npcHandler = npcHandler, text = 'I had a cousin named like that.'})

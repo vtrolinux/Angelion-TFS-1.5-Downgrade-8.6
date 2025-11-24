@@ -20,6 +20,6 @@
 	</flags>
 	<defenses armor="1" defense="1" />
 	<loot>
-		<item name="downy feather" chance="1000" />
+		<item name="Downy Feather" chance="1030" />
 	</loot>
 </monster>

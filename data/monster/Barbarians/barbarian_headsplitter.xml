@@ -26,34 +26,34 @@
 	</attacks>
 	<defenses armor="7" defense="7" />
 	<elements>
+		<element deathPercent="-10" />
+		<element holyPercent="20" />
+		<element icePercent="50" />
 		<element energyPercent="20" />
 		<element earthPercent="-10" />
-		<element icePercent="50" />
-		<element holyPercent="20" />
-		<element deathPercent="-10" />
 	</elements>
 	<immunities>
+		<immunity invisible="0" />
 		<immunity paralyze="1" />
-		<immunity drunk="1" />
 	</immunities>
 	<voices interval="5000" chance="10">
-		<voice sentence="I will regain my honor with your blood!" />
-		<voice sentence="Surrender is not option!" />
-		<voice sentence="Its you or me!" />
-		<voice sentence="Die! Die! Die!" />
+		<voice sentence="Die! Die! Die!" yell="0" />
+		<voice sentence="Its you or me!" yell="0" />
+		<voice sentence="Surrender is not option!" yell="0" />
+		<voice sentence="I will regain my honor with your blood!" yell="0" />
 	</voices>
 	<loot>
-		<item id="2148" name="gold coin" chance="75228" countmax="30" />
-		<item id="2050" name="torch" chance="59812" />
-		<item id="2460" name="brass helmet" chance="20170" />
-		<item id="2403" name="knife" chance="14928" />
-		<item id="2473" name="viking helmet" chance="4960" />
-		<item id="2483" name="scale armor" chance="4046" />
-		<item id="2229" name="skull (item)" chance="3194" />
-		<item id="5913" name="brown piece of cloth" chance="968" />
-		<item id="7618" name="health potion" chance="531" />
-		<item id="2168" name="life ring" chance="228" />
-		<item id="7461" name="krimhorn helmet" chance="112" />
-		<item id="7457" name="fur boots" chance="87" />
+		<item name="Gold Coin" countmax="30" chance="75110" />
+		<item name="Torch" chance="59800" />
+		<item name="Brass Helmet" chance="20110" />
+		<item name="Knife" chance="14860" />
+		<item name="Viking Helmet" chance="5010" />
+		<item name="Scale Armor" chance="4030" />
+		<item name="Skull" chance="3130" />
+		<item name="Brown Piece of Cloth" chance="960" />
+		<item name="Health Potion" chance="520" />
+		<item name="Life Ring" chance="220" />
+		<item name="Krimhorn Helmet" chance="110" />
+		<item name="Fur Boots" chance="90" />
 	</loot>
 </monster>

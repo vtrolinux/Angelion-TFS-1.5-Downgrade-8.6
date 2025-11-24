@@ -24,18 +24,18 @@
 	</attacks>
 	<defenses armor="2" defense="2" />
 	<voices interval="5000" chance="10">
-		<voice sentence="You advanshed, you advanshed!" />
-		<voice sentence="Neeewbiiieee!" />
-		<voice sentence="Screeech!" />
-		<voice sentence="Hunterrr ish PK!" />
-		<voice sentence="BR? PL? SWE?" />
-		<voice sentence="Hope you die and loooosh it!" />
-		<voice sentence="You powerrrrrrabuserrrrr!" />
-		<voice sentence="You are corrrrupt! Corrrrupt!" />
-		<voice sentence="Tarrrrp?" />
-		<voice sentence="Blesshhh my stake! Screeech!" />
-		<voice sentence="Leeave orrr hunted!!" />
-		<voice sentence="Shhtop whining! Rraaah!" />
-		<voice sentence="I'm heeerrre! Screeeech!" />
+		<voice sentence="You advanshed, you advanshed!" yell="0" />
+		<voice sentence="You are corrrrupt! Corrrrupt!" yell="0" />
+		<voice sentence="Blesshhh my stake! Screeech!" yell="0" />
+		<voice sentence="You powerrrrrrabuserrrrr!" yell="0" />
+		<voice sentence="Screeech!" yell="0" />
+		<voice sentence="Hunterrr ish PK!" yell="0" />
+		<voice sentence="I'm heeerrre! Screeeech!" yell="0" />
+		<voice sentence="Leeave orrr hunted!!" yell="0" />
+		<voice sentence="Shhtop whining! Rraaah!" yell="0" />
+		<voice sentence="Tarrrrp?" yell="0" />
+		<voice sentence="BR? PL? SWE?" yell="1" />
+		<voice sentence="Neeewbiiieee!" yell="0" />
+		<voice sentence="Hope you die and loooosh it!" yell="0" />
 	</voices>
 </monster>

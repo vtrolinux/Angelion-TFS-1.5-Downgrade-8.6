@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<monster name="Bat" namedescription="a bat" race="blood" experience="10" speed="200" manacost="250">
+<monster name="Bat" nameDescription="a bat" race="blood" experience="10" speed="200" manacost="250">
 	<health now="30" max="30" />
 	<look type="122" corpse="6053" />
 	<targetchange interval="4000" chance="0" />
@@ -27,9 +27,9 @@
 		<element earthPercent="-10" />
 	</elements>
 	<voices interval="5000" chance="10">
-		<voice sentence="Flap! Flap!" />
+		<voice sentence="Flap! Flap!" yell="0" />
 	</voices>
 	<loot>
-		<item name="bat wing" chance="1000" />
+		<item name="Bat Wing" chance="1050" />
 	</loot>
 </monster>

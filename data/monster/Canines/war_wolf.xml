@@ -24,22 +24,21 @@
 	</attacks>
 	<defenses armor="8" defense="8" />
 	<elements>
-		<element earthPercent="20" />
+		<element deathPercent="-10" />
 		<element holyPercent="10" />
 		<element icePercent="-10" />
-		<element deathPercent="-10" />
+		<element earthPercent="20" />
 	</elements>
 	<immunities>
-		<immunity outfit="1" />
 	</immunities>
 	<voices interval="5000" chance="10">
-		<voice sentence="Grrrrrrr" />
-		<voice sentence="Yoooohhuuuu!" yell="1" />
+		<voice sentence="Yoooohhuuuu!" yell="0" />
+		<voice sentence="Grrrrrrr" yell="0" />
 	</voices>
 	<loot>
-		<item id="2671" name="ham" chance="39170" />
-		<item id="11235" name="warwolf fur" chance="4951" />
-		<item id="5897" name="wolf paw" chance="993" />
-		<item id="7394" name="wolf trophy" chance="48" />
+		<item name="Ham" countmax="2" chance="39230" />
+		<item name="Warwolf Fur" chance="4890" />
+		<item name="Wolf Paw" chance="950" />
+		<item name="Wolf Trophy" chance="50" />
 	</loot>
 </monster>

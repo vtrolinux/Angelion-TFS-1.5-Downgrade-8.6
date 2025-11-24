@@ -8,7 +8,7 @@
 		value="
 		nail,8309,30;
 		bat wing,5894,200;
-		bonelord eye,5898,200;
+		beholder eye,5898,200;
 		minotaur leather,5878,200;
 		holy orchid,5922,225;
 		ankh,2193,250;
@@ -57,7 +57,7 @@
 		<parameter key="shop_sellable" value="
 		nail,8309,10;
 		bat wing,5894,50;
-		bonelord eye,5898,80;
+		beholder eye,5898,80;
 		minotaur leather,5878,80;
 		holy orchid,5922,90;
 		ankh,2193,100;

@@ -17,10 +17,11 @@
 		<flag runonhealth="0" />
 		<flag canwalkonenergy="0" />
 		<flag canwalkonfire="0" />
+		<flag canwalkonpoison="1" />
 	</flags>
 	<attacks>
 		<attack name="melee" interval="2000" min="0" max="-100" poison="100" />
-		<attack name="earth" interval="2000" chance="15" range="7" min="-60" max="-95">
+		<attack name="earth" interval="2000" chance="15" range="7" min="-60" max="-90">
 			<attribute key="shootEffect" value="poison" />
 			<attribute key="areaEffect" value="greenbubble" />
 		</attack>
@@ -34,22 +35,22 @@
 	</attacks>
 	<defenses armor="22" defense="22" />
 	<elements>
-		<element energyPercent="10" />
 		<element icePercent="20" />
 		<element firePercent="-20" />
+		<element energyPercent="10" />
 	</elements>
 	<immunities>
 		<immunity earth="1" />
 		<immunity invisible="1" />
+		<immunity paralyze="0" />
 	</immunities>
 	<loot>
-		<item name="gold coin" countmax="40" chance="87000" />
-		<item name="dark mushroom" chance="8000" />
-		<item name="carniphila seeds" chance="4000" />
-		<item name="shadow herb" chance="1000" />
-		<item name="corncob" chance="1000" />
-		<item name="sling herb" countmax="2" chance="500" />
-		<item name="seeds" chance="500" />
-		<item name="carrot on a stick" chance="150" />
+		<item name="Gold Coin" countmax="40" chance="87910" />
+		<item name="Dark Mushroom" chance="7970" />
+		<item name="Carniphila Seeds" chance="4010" />
+		<item name="Shadow Herb" chance="1000" />
+		<item name="Corncob" chance="980" />
+		<item name="Seeds" chance="510" />
+		<item name="Sling Herb" countmax="2" chance="500" />
 	</loot>
 </monster>

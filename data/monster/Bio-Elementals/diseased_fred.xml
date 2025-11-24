@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<monster name="Diseased Fred" nameDescription="a diseased Fred" race="venom" experience="300" speed="250">
+<monster name="Diseased Fred" nameDescription="a Diseased Fred" race="venom" experience="300" speed="250">
 	<health now="1100" max="1100" />
 	<look type="299" corpse="8951" />
 	<targetchange interval="4000" chance="10" />
@@ -11,13 +11,18 @@
 		<flag convinceable="0" />
 		<flag pushable="0" />
 		<flag canpushitems="1" />
-		<flag staticattack="90" />
 		<flag targetdistance="1" />
+		<flag staticattack="90" />
+		<flag lightcolor="83" />
+		<flag lightlevel="4" />
+		<flag canwalkonenergy="1" />
+		<flag canwalkonfire="1" />
+		<flag canwalkonpoison="1" />
 		<flag runonhealth="150" />
 		<flag isboss="1" />
 	</flags>
 	<attacks>
-		<attack name="melee" interval="2000" min="0" max="-150" poison="60" />
+		<attack name="melee" interval="2000" min="0" max="-150" poison="80" />
 		<attack name="lifedrain" interval="2000" chance="15" target="1" range="7" min="-65" max="-80">
 			<attribute key="areaEffect" value="redshimmer" />
 		</attack>
@@ -35,24 +40,24 @@
 	</defenses>
 	<elements>
 		<element physicalPercent="15" />
-		<element energyPercent="15" />
-		<element icePercent="15" />
-		<element holyPercent="15" />
 		<element deathPercent="55" />
+		<element holyPercent="15" />
+		<element icePercent="15" />
 		<element firePercent="15" />
+		<element energyPercent="15" />
 	</elements>
 	<immunities>
 		<immunity earth="1" />
-		<immunity paralyze="1" />
 		<immunity invisible="1" />
+		<immunity paralyze="1" />
 	</immunities>
 	<voices interval="5000" chance="10">
-		<voice sentence="You will suffer the same fate as I do!" />
-		<voice sentence="The pain! The pain!" />
-		<voice sentence="Stay away! I am contagious!" />
-		<voice sentence="The plague will get you!" />
+		<voice sentence="The pain! The pain!" yell="0" />
+		<voice sentence="Stay away! I am contagious!" yell="0" />
+		<voice sentence="You will suffer the same fate as I do!" yell="0" />
+		<voice sentence="The plague will get you!" yell="0" />
 	</voices>
 	<loot>
-		<item name="gold coin" countmax="25" chance="43000" />
+		<item name="Gold Coin" countmax="23" chance="40960" />
 	</loot>
 </monster>

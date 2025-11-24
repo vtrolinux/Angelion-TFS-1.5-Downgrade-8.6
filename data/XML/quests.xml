@@ -34,7 +34,7 @@
          <missionstate id="27" description="In the south-east of Tiquanda is a small settlement of the lizard people. Beneath the newly constructed temple there, the lizards hide the urn. Acquire an ancient urn which is some sort of relic to the lizard people of Tiquanda."/>
          <missionstate id="28" description="Bring the Funeral Urn back to the Explorer Society."/>
      </mission>
-     <mission name="The Bonelord Secret" storageid="90" startvalue="30" endvalue="32">
+     <mission name="The beholder Secret" storageid="90" startvalue="30" endvalue="32">
          <missionstate id="30" description="Travel to the city of Darashia and then head north-east for the pyramid. If any documents are left, you probably find them in the catacombs beneath."/>
          <missionstate id="31" description="Bring the Wrinkled Parchment back to the Explorer Society representative."/>
      </mission>
@@ -323,7 +323,7 @@
 </quest>
 <quest name="Outfit and Addon Quests" startstorageid="12010" startstoragevalue="1">
 	 <mission name="Assassin Outfit" storageid="50080" startvalue="1" endvalue="9">
-         <missionstate id="1" description="Get 30 bonelord eyes."/>
+         <missionstate id="1" description="Get 30 beholder eyes."/>
          <missionstate id="2" description="Get 10 red dragon scales."/>
 		 <missionstate id="3" description="Get 30 lizard scales."/>
 		 <missionstate id="4" description="Get 20 fish fins."/>
@@ -771,7 +771,7 @@
      <mission name="Nibelor 4: Berserk Brewery" storageid="12205" startvalue="1" endvalue="6">
          <missionstate id="1" description="The first things needed are 5 bat wings to brew a berserker elixir. Bring her them!"/>
          <missionstate id="2" description="The next items Siflind need are 4 bear paws. Bring her them!"/>
-         <missionstate id="3" description="The next items Siflind need are 3 bonelord eyes. Bring her them!"/>
+         <missionstate id="3" description="The next items Siflind need are 3 beholder eyes. Bring her them!"/>
          <missionstate id="4" description="The next items Siflind need are 2 fish fins. Bring her them!"/>
          <missionstate id="5" description="The next item Siflind need is a green dragon scale. Bring her that!"/>
          <missionstate id="6" description="You helped Siflind to defend Svargrond. Now Nilsor need help, go ask him for mission."/>

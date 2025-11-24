@@ -42,8 +42,8 @@ function creatureSayCallback(cid, type, msg)
         npcHandler:say({
             "I dictated my memoirs to a human servant. I like the idea to share my thoughts and memories with humanity with the help of a {book}. ...",
             "You are my greatest fans after all. ...",
-            "If it becomes popular, I might consider an orcish translation or even one in bonelord language. ...",
-            "By the way, it's a funny story how I learnt the bonelord language. However, I saved it for a possible part two of my memoirs."
+            "If it becomes popular, I might consider an orcish translation or even one in beholder language. ...",
+            "By the way, it's a funny story how I learnt the beholder language. However, I saved it for a possible part two of my memoirs."
         }, cid)
         npcHandler.topic[cid] = 0
 

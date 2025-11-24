@@ -21,7 +21,6 @@
 	</flags>
 	<attacks>
 		<attack name="melee" interval="1200" min="0" max="-200" />
-		<attack name="physical" interval="2000" chance="30" range="1" min="0" max="-100" />
 		<attack name="drown" interval="2000" chance="15" target="0" min="-41" max="-70">
 			<attribute key="areaEffect" value="explosionarea" />
 		</attack>
@@ -32,24 +31,26 @@
 		</defense>
 	</defenses>
 	<elements>
-		<element holyPercent="10" />
+		<element physicalPercent="-10" />
 		<element deathPercent="10" />
+		<element holyPercent="10" />
+		<element icePercent="10" />
 		<element firePercent="10" />
 		<element energyPercent="10" />
-		<element icePercent="10" />
 		<element earthPercent="10" />
-		<element physicalPercent="-20" />
 	</elements>
 	<immunities>
+		<immunity invisible="0" />
+		<immunity paralyze="0" />
 		<immunity lifedrain="1" />
 		<immunity drown="1" />
 	</immunities>
 	<voices interval="5000" chance="10">
-		<voice sentence="Gokgoooook" />
-		<voice sentence="Cluck Cluck" />
-		<voice sentence="I will fill MY cushion with YOUR hair! CLUCK!" />
+		<voice sentence="Cluck Cluck" yell="0" />
+		<voice sentence="I will fill MY cushion with YOUR hair! CLUCK!" yell="0" />
+		<voice sentence="Gokgoooook" yell="0" />
 	</voices>
 	<loot>
-		<item name="gold coin" countmax="100" chance="50000" />
+		<item name="Gold Coin" countmax="75" chance="66230" />
 	</loot>
 </monster>

@@ -10,7 +10,7 @@ function onThink()		npcHandler:onThink()		end
 local voices = {
 	{ text = "<mumbles> So where was I again?" },
 	{ text = "<mumbles> Typical - you can never find a hero when you need one!" },
-	{ text = "<mumbles> Could the bonelord language be the invention of some madman?" },
+	{ text = "<mumbles> Could the beholder language be the invention of some madman?" },
 	{ text = "<mumbles> The curse algorithm of triplex shadowing has to be two times higher than an overcharged nanoquorx on the peripheral..." }
 }
 

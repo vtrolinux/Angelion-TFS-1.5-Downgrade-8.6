@@ -21,6 +21,6 @@
 	</flags>
 	<defenses armor="1" defense="1" />
 	<voices interval="5000" chance="10">
-		<voice sentence="Wuff wuff" />
+		<voice sentence="Wuff wuff" yell="0" />
 	</voices>
 </monster>

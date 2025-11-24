@@ -24,33 +24,34 @@
 	<defenses armor="8" defense="8" />
 	<elements>
 		<element physicalPercent="10" />
+		<element deathPercent="-5" />
+		<element holyPercent="10" />
+		<element icePercent="50" />
 		<element energyPercent="20" />
 		<element earthPercent="-10" />
-		<element icePercent="50" />
-		<element holyPercent="10" />
-		<element deathPercent="-5" />
 	</elements>
 	<immunities>
-		<immunity paralyze="1" />
+		<immunity invisible="0" />
+		<immunity paralyze="0" />
 	</immunities>
 	<voices interval="5000" chance="10">
-		<voice sentence="You will become my trophy." />
-		<voice sentence="Fight harder, coward." />
-		<voice sentence="Show that you are a worthy opponent." />
+		<voice sentence="Fight harder, coward." yell="0" />
+		<voice sentence="You will become my trophy." yell="0" />
+		<voice sentence="Show that you are a worthy opponent." yell="0" />
 	</voices>
 	<loot>
-		<item id="2148" name="gold coin" chance="74364" countmax="30" />
-		<item id="2050" name="torch" chance="60308" />
-		<item id="2460" name="brass helmet" chance="19950" />
-		<item id="2403" name="knife" chance="15045" />
-		<item id="2473" name="viking helmet" chance="7886" />
-		<item id="2483" name="scale armor" chance="4024" />
-		<item id="2229" name="skull (item)" chance="3002" />
-		<item id="7618" name="health potion" chance="914" />
-		<item id="5913" name="brown piece of cloth" chance="521" />
-		<item id="2168" name="life ring" chance="240" />
-		<item id="7457" name="fur boots" chance="99" />
-		<item id="7462" name="ragnir helmet" chance="95" />
-		<item id="7449" name="crystal sword" chance="87" />
+		<item name="Gold Coin" countmax="30" chance="75030" />
+		<item name="Torch" chance="59670" />
+		<item name="Brass Helmet" chance="19940" />
+		<item name="Knife" chance="14310" />
+		<item name="Viking Helmet" chance="7850" />
+		<item name="Scale Armor" chance="4360" />
+		<item name="Skull" chance="2980" />
+		<item name="Health Potion" chance="770" />
+		<item name="Brown Piece of Cloth" chance="60" />
+		<item name="Life Ring" chance="60" />
+		<item name="Fur Boots" chance="220" />
+		<item name="Ragnir Helmet" chance="110" />
+		<item name="Crystal Sword" chance="60" />
 	</loot>
 </monster>

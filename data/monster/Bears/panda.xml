@@ -17,9 +17,10 @@
 		<flag runonhealth="15" />
 		<flag canwalkonenergy="0" />
 		<flag canwalkonfire="0" />
+		<flag canwalkonpoison="1" />
 	</flags>
 	<attacks>
-		<attack name="melee" interval="2000" min="0" max="-20" />
+		<attack name="melee" interval="2000" min="0" max="-16" />
 	</attacks>
 	<defenses armor="8" defense="8" />
 	<elements>
@@ -29,12 +30,12 @@
 		<immunity earth="1" />
 	</immunities>
 	<voices interval="5000" chance="10">
-		<voice sentence="Grrrr" />
-		<voice sentence="Groar" />
+		<voice sentence="Grrrr" yell="0" />
+		<voice sentence="Groar" yell="0" />
 	</voices>
 	<loot>
-		<item id="2666" name="meat" chance="69144" />
-		<item id="2671" name="ham" chance="36695" />
-		<item id="12401" name="bamboo stick" chance="9423" />
+		<item name="Meat" countmax="4" chance="68490" />
+		<item name="Ham" countmax="2" chance="37850" />
+		<item name="Bamboo Stick" chance="9940" />
 	</loot>
 </monster>

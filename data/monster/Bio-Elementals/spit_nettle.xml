@@ -20,15 +20,15 @@
 		<flag canwalkonpoison="0" />
 	</flags>
 	<attacks>
-		<attack name="earth" interval="1000" chance="20" range="7" target="1" min="-15" max="-40">
+		<attack name="earth" interval="1000" chance="20" range="9" target="1" min="-17" max="-37">
 			<attribute key="shootEffect" value="poison" />
 		</attack>
-		<attack name="poisoncondition" interval="2000" chance="15" range="7" target="1" min="-40" max="-100">
+		<attack name="poisoncondition" interval="2000" chance="15" range="7" target="1" min="-20" max="-40">
 			<attribute key="shootEffect" value="poison" />
 		</attack>
 	</attacks>
 	<defenses armor="12" defense="12">
-		<defense name="healing" interval="2000" chance="10" min="15" max="37">
+		<defense name="healing" interval="2000" chance="10" min="8" max="16">
 			<attribute key="areaEffect" value="blueshimmer" />
 		</defense>
 	</defenses>
@@ -39,16 +39,16 @@
 	<immunities>
 		<immunity energy="1" />
 		<immunity earth="1" />
-		<immunity paralyze="1" />
 		<immunity invisible="1" />
+		<immunity paralyze="1" />
 	</immunities>
 	<loot>
-		<item id="2804" name="shadow herb" chance="10954" />
-		<item id="2148" name="gold coin" chance="10703" countmax="5" />
-		<item id="12432" name="nettle spit" chance="9840" />
-		<item id="2802" name="sling herb" chance="5556" countmax="2" />
-		<item id="2747" name="grave flower" chance="989" />
-		<item id="11231" name="nettle blossom" chance="910" />
-		<item id="7732" name="seeds" chance="361" />
+		<item name="Shadow Herb" chance="10800" />
+		<item name="Gold Coin" countmax="5" chance="10320" />
+		<item name="Nettle Spit" chance="9860" />
+		<item name="Sling Herb" countmax="2" chance="5520" />
+		<item name="Grave Flower" chance="990" />
+		<item name="Nettle Blossom" chance="950" />
+		<item name="Seeds" chance="340" />
 	</loot>
 </monster>

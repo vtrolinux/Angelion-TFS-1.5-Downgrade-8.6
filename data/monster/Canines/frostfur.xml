@@ -22,10 +22,12 @@
 	<elements>
 		<element firePercent="20" />
 		<element energyPercent="-10" />
+		<element earthPercent="20" />
 	</elements>
 	<immunities>
-		<immunity outfit="1" />
-		<immunity drunk="1" />
 		<immunity invisible="1" />
 	</immunities>
+	<voices>
+		<voice sentence="Grrr" yell="0" />
+	</voices>
 </monster>

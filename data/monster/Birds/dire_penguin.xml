@@ -7,7 +7,7 @@
 		<flag summonable="0" />
 		<flag attackable="1" />
 		<flag hostile="1" />
-		<flag illusionable="1" />
+		<flag illusionable="0" />
 		<flag convinceable="0" />
 		<flag pushable="0" />
 		<flag canpushitems="0" />
@@ -34,16 +34,17 @@
 		</defense>
 	</defenses>
 	<immunities>
-		<immunity lifedrain="1" />
-		<immunity paralyze="1" />
-		<immunity outfit="1" />
 		<immunity invisible="1" />
+		<immunity paralyze="1" />
 	</immunities>
+	<voices>
+		<voice sentence="Grrrrrr" yell="0" />
+	</voices>
 	<loot>
-		<item name="gold coin" countmax="10" chance="18000" />
-		<item name="dragon hammer" chance="200" />
-		<item id="2667" countmax="4" chance="8000" /><!-- fish -->
-		<item name="rainbow trout" chance="8000" />
-		<item name="green perch" chance="7000" />
+		<item name="Gold Coin" countmax="10" chance="64150" />
+		<item name="Fish" countmax="4" chance="9430" />
+		<item name="rainbow trout" chance="150" />
+		<item name="green perch" chance="150" />
+		<item name="northern pike" chance="150" />
 	</loot>
 </monster>

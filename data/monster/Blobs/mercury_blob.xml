@@ -35,24 +35,25 @@
 			<attribute key="areaEffect" value="blueshimmer" />
 		</defense>
 	</defenses>
-	<immunities>
-		<immunity death="1" />
-	</immunities>
 	<elements>
+		<element physicalPercent="10" />
+		<element holyPercent="65" />
+		<element icePercent="15" />
 		<element firePercent="10" />
 		<element earthPercent="65" />
-		<element icePercent="15" />
-		<element physicalPercent="5" />
-		<element holyPercent="65" />
-		<element lifedrainPercent="80" />
 	</elements>
 	<summons maxSummons="3">
 		<summon name="Mercury Blob" interval="2000" chance="10" />
 	</summons>
+	<immunities>
+		<immunity death="1" />
+		<immunity invisible="0" />
+		<immunity paralyze="0" />
+	</immunities>
 	<voices interval="5000" chance="10">
-		<voice sentence="Crackle" />
+		<voice sentence="Crackle" yell="0" />
 	</voices>
 	<loot>
-		<item name="glob of mercury" chance="17966" />
+		<item name="Glob of Mercury" chance="19050" />
 	</loot>
 </monster>

@@ -14,6 +14,8 @@
 		<flag staticattack="90" />
 		<flag targetdistance="1" />
 		<flag runonhealth="0" />
+		<flag lightcolor="83" />
+		<flag lightlevel="4" />
 		<flag canwalkonenergy="0" />
 		<flag canwalkonfire="0" />
 		<flag canwalkonpoison="0" />
@@ -39,32 +41,32 @@
 		</defense>
 	</defenses>
 	<elements>
+		<element physicalPercent="-5" />
+		<element deathPercent="5" />
+		<element holyPercent="-5" />
+		<element icePercent="-5" />
+		<element firePercent="85" />
 		<element energyPercent="-10" />
 		<element earthPercent="30" />
-		<element icePercent="-5" />
-		<element physicalPercent="-5" />
-		<element holyPercent="-5" />
-		<element deathPercent="5" />
-		<element firePercent="85" />
 	</elements>
 	<immunities>
-		<immunity paralyze="1" />
 		<immunity invisible="1" />
+		<immunity paralyze="1" />
 	</immunities>
 	<voices interval="5000" chance="10">
-		<voice sentence="Tchhh!" />
-		<voice sentence="Slurp!" />
+		<voice sentence="Slurp!" yell="0" />
+		<voice sentence="Tchhh!" yell="0" />
 	</voices>
 	<loot>
-		<item name="gold coin" countmax="100" chance="50750" />
-		<item name="gold coin" countmax="5" chance="50750" />
-		<item name="boggy dreads" chance="9870" />
-		<item name="great health potion" chance="2030" />
-		<item name="plate legs" chance="2020" />
-		<item name="great spirit potion" chance="2000" />
-		<item name="springsprout rod" chance="1030" />
-		<item name="ultimate health potion" chance="770" />
-		<item name="belted cape" chance="590" />
-		<item name="paladin armor" chance="140" />
+		<item name="Gold Coin" countmax="100" chance="92110" />
+		<item name="Gold Coin" countmax="5" chance="92110" />
+		<item name="Boggy Dreads" chance="9900" />
+		<item name="Great Health Potion" chance="2030" />
+		<item name="Great Spirit Potion" chance="2000" />
+		<item name="Plate Legs" chance="2010" />
+		<item name="Springsprout Rod" chance="1020" />
+		<item name="Ultimate Health Potion" chance="780" />
+		<item name="Belted Cape" chance="590" />
+		<item name="Paladin Armor" chance="140" />
 	</loot>
 </monster>

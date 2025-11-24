@@ -24,18 +24,18 @@
 	</attacks>
 	<defenses armor="6" defense="6" />
 	<elements>
-		<element icePercent="-10" />
-		<element holyPercent="10" />
 		<element deathPercent="-5" />
+		<element holyPercent="10" />
+		<element icePercent="-10" />
 	</elements>
 	<voices interval="5000" chance="10">
-		<voice sentence="Grrrr" />
-		<voice sentence="Groar" />
+		<voice sentence="Grrrr" yell="0" />
+		<voice sentence="Groar" yell="0" />
 	</voices>
 	<loot>
-		<item id="2666" name="meat" chance="39964" />
-		<item id="2671" name="ham" chance="19987" />
-		<item id="5896" name="bear paw" chance="1973" />
-		<item id="5902" name="honeycomb" chance="480" />
+		<item name="Meat" countmax="4" chance="39980" />
+		<item name="Ham" countmax="3" chance="19910" />
+		<item name="Bear Paw" chance="2000" />
+		<item name="Honeycomb" chance="470" />
 	</loot>
 </monster>
