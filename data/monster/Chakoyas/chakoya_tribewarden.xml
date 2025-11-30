@@ -23,28 +23,28 @@
 	</attacks>
 	<defenses armor="10" defense="10" />
 	<elements>
-		<element firePercent="25" />
-		<element holyPercent="10" />
-		<element energyPercent="-15" />
 		<element deathPercent="-5" />
+		<element holyPercent="10" />
+		<element firePercent="25" />
+		<element energyPercent="-15" />
 	</elements>
 	<immunities>
 		<immunity ice="1" />
 	</immunities>
 	<voices interval="5000" chance="10">
-		<voice sentence="Quisavu tukavi!" />
-		<voice sentence="Si siyoqua jamjam!" />
-		<voice sentence="Achuq! jinuma!" />
-		<voice sentence="Si ji jusipa!" />
+		<voice sentence="Si siyoqua jamjam!" yell="0" />
+		<voice sentence="Achuq! jinuma!" yell="0" />
+		<voice sentence="Quisavu tukavi!" yell="0" />
+		<voice sentence="Si ji jusipa!" yell="0" />
 	</voices>
 	<loot>
-		<item name="gold coin" countmax="30" chance="60000" />
-		<item name="short sword" chance="4680" />
-		<item name="bone shield" chance="1000" />
-		<item id="2667" chance="20000" /><!-- fish -->
-		<item name="northern pike" chance="90" />
-		<item name="rainbow trout" chance="130" />
-		<item name="green perch" chance="190" />
-		<item name="mammoth whopper" chance="300" />
+		<item name="Gold Coin" countmax="20" chance="79600" />
+		<item name="Fish" chance="19980" />
+		<item name="Short Sword" chance="4800" />
+		<item name="Bone Shield" chance="1040" />
+		<item name="Mammoth Whopper" chance="150" />
+		<item name="Rainbow Trout" chance="100" />
+		<item name="Green Perch" chance="90" />
+		<item name="Northern Pike" chance="70" />
 	</loot>
 </monster>

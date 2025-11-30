@@ -7,14 +7,17 @@
 		<flag summonable="0" />
 		<flag attackable="1" />
 		<flag hostile="1" />
-		<flag illusionable="1" />
+		<flag illusionable="0" />
 		<flag convinceable="0" />
 		<flag pushable="0" />
 		<flag canpushitems="1" />
 		<flag canpushcreatures="1" />
 		<flag targetdistance="1" />
 		<flag staticattack="70" />
+		<flag runonhealth="0" />
 		<flag canwalkonenergy="0" />
+		<flag canwalkonfire="1" />
+		<flag canwalkonpoison="1" />
 	</flags>
 	<attacks>
 		<attack name="melee" interval="2000" min="0" max="-480" />
@@ -30,11 +33,8 @@
 			<attribute key="shootEffect" value="poison" />
 			<attribute key="areaEffect" value="poison" />
 		</attack>
-		<attack name="earth" interval="2000" chance="15" target="1" range="7" min="0" max="-180">
+		<attack name="earth" interval="2000" chance="15" target="1" range="7" min="0" max="-600" poison="400">
 			<attribute key="shootEffect" value="poison" />
-			<attribute key="areaEffect" value="poison" />
-		</attack>
-		<attack name="earth" interval="2000" chance="10" length="8" spread="3" min="-150" max="-690">
 			<attribute key="areaEffect" value="poison" />
 		</attack>
 		<attack name="lifedrain" interval="2000" chance="10" length="8" spread="3" min="-300" max="-700">
@@ -52,13 +52,13 @@
 	</defenses>
 	<elements>
 		<element physicalPercent="5" />
-		<element icePercent="50" />
 		<element holyPercent="-25" />
+		<element icePercent="10" />
 	</elements>
 	<immunities>
+		<immunity death="1" />
 		<immunity fire="1" />
 		<immunity earth="1" />
-		<immunity death="1" />
 		<immunity paralyze="1" />
 		<immunity invisible="1" />
 		<immunity drown="1" />
@@ -68,30 +68,31 @@
 		<voice sentence="I SENSE LIFE" yell="1" />
 	</voices>
 	<loot>
-		<item id="2148" name="gold coin" chance="100000" countmax="200" />
-		<item id="2152" name="platinum coin" chance="49699" countmax="5" />
-		<item id="11233" name="unholy bone" chance="33778" />
-		<item id="2146" name="small sapphire" chance="27571" countmax="2" />
-		<item id="7368" name="assassin star" chance="25090" countmax="5" />
-		<item id="7590" name="great mana potion" chance="24723" countmax="3" />
-		<item id="7591" name="great health potion" chance="24647" countmax="3" />
-		<item id="2144" name="black pearl" chance="22363" countmax="2" />
-		<item id="6500" name="demonic essence" chance="15402" />
-		<item id="5925" name="hardened bone" chance="15320" />
-		<item id="2547" name="power bolt" chance="14573" countmax="15" />
-		<item id="2033" name="golden mug" chance="5126" />
-		<item id="2476" name="knight armor" chance="4904" />
-		<item id="7430" name="dragonbone staff" chance="4138" />
-		<item id="6300" name="death ring" chance="1822" />
-		<item id="2177" name="life crystal" chance="1588" />
-		<item id="2454" name="war axe" chance="1329" />
-		<item id="2498" name="royal helmet" chance="1120" />
-		<item id="2158" name="blue gem" chance="1095" />
-		<item id="9971" name="gold ingot" chance="1031" />
-		<item id="7402" name="dragon slayer" chance="993" />
-		<item id="11355" name="spellweaver's robe" chance="924" />
-		<item id="2466" name="golden armor" chance="658" />
-		<item id="8885" name="divine plate" chance="437" />
-		<item id="8889" name="skullcracker armor" chance="304" />
+		<item name="Gold Coin" countmax="100" chance="100000" />
+		<item name="Gold Coin" countmax="98" chance="100000" />
+		<item name="Platinum Coin" countmax="5" chance="49760" />
+		<item name="Unholy Bone" chance="33850" />
+		<item name="Small Sapphire" countmax="2" chance="27560" />
+		<item name="Assassin Star" countmax="5" chance="25220" />
+		<item name="Great Mana Potion" countmax="3" chance="24680" />
+		<item name="Great Health Potion" countmax="3" chance="24670" />
+		<item name="Black Pearl" countmax="2" chance="22460" />
+		<item name="Demonic Essence" chance="15420" />
+		<item name="Hardened Bone" chance="15200" />
+		<item name="Power Bolt" countmax="15" chance="14660" />
+		<item name="Golden Mug" chance="5190" />
+		<item name="Knight Armor" chance="4870" />
+		<item name="Dragonbone Staff" chance="4110" />
+		<item name="Death Ring" chance="1890" />
+		<item name="Life Crystal" chance="1580" />
+		<item name="War Axe" chance="1320" />
+		<item name="Royal Helmet" chance="1120" />
+		<item name="Blue Gem" chance="1090" />
+		<item name="Gold Ingot" chance="1060" />
+		<item name="Dragon Slayer" chance="970" />
+		<item name="Spellweaver's Robe" chance="900" />
+		<item name="Golden Armor" chance="670" />
+		<item name="Divine Plate" chance="440" />
+		<item name="Skullcracker Armor" chance="310" />
 	</loot>
 </monster>

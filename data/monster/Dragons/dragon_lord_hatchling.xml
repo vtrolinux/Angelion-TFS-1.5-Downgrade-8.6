@@ -16,11 +16,12 @@
 		<flag staticattack="90" />
 		<flag runonhealth="30" />
 		<flag canwalkonenergy="0" />
+		<flag canwalkonfire="1" />
 		<flag canwalkonpoison="0" />
 	</flags>
 	<attacks>
-		<attack name="melee" interval="2000" min="0" max="-90" />
-		<attack name="fire" interval="2000" chance="10" length="5" spread="2" min="-90" max="-125">
+		<attack name="melee" interval="2000" min="0" max="-130" />
+		<attack name="fire" interval="2000" chance="10" length="5" spread="2" min="-90" max="-137">
 			<attribute key="areaEffect" value="firearea" />
 		</attack>
 		<attack name="fire" interval="2000" chance="15" range="7" radius="4" target="1" min="-55" max="-105">
@@ -32,14 +33,14 @@
 		</attack>
 	</attacks>
 	<defenses armor="20" defense="20">
-		<defense name="healing" interval="2000" chance="15" min="26" max="48">
+		<defense name="healing" interval="2000" chance="15" min="40" max="53">
 			<attribute key="areaEffect" value="blueshimmer" />
 		</defense>
 	</defenses>
 	<elements>
-		<element earthPercent="10" />
 		<element icePercent="-10" />
-		<element energyPercent="-10" />
+		<element energyPercent="-5" />
+		<element earthPercent="75" />
 	</elements>
 	<immunities>
 		<immunity paralyze="1" />
@@ -47,15 +48,15 @@
 		<immunity fire="1" />
 	</immunities>
 	<voices interval="5000" chance="10">
-		<voice sentence="Fchu?" />
-		<voice sentence="Rooawwrr" />
+		<voice sentence="Rooawwrr" yell="0" />
+		<voice sentence="Fchu?" yell="0" />
 	</voices>
 	<loot>
-		<item name="gold coin" countmax="90" chance="33750" />
-		<item name="gold coin" countmax="75" chance="33750" />
-		<item name="dragon ham" chance="80000" />
-		<item name="green mushroom" chance="560" />
-		<item name="mana potion" chance="300" />
-		<item name="magma boots" chance="100" />
+		<item name="Dragon Ham" chance="79560" />
+		<item name="Gold Coin" countmax="100" chance="75160" />
+		<item name="Gold Coin" countmax="65" chance="75160" />
+		<item name="Green Mushroom" chance="450" />
+		<item name="Mana Potion" chance="420" />
+		<item name="Magma Boots" chance="90" />
 	</loot>
 </monster>

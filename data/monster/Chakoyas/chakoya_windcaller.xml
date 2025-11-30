@@ -26,7 +26,7 @@
 		<attack name="freezecondition" interval="2000" chance="10" target="0" radius="3" min="-130" max="-160">
 			<attribute key="areaEffect" value="icearea" />
 		</attack>
-		<attack name="ice" interval="2000" chance="10" target="0" length="5" spread="2" min="-9" max="-30">
+		<attack name="ice" interval="2000" chance="10" target="0" length="5" spread="2" min="-9" max="-20">
 			<attribute key="areaEffect" value="icearea" />
 		</attack>
 	</attacks>
@@ -36,27 +36,27 @@
 		</defense>
 	</defenses>
 	<elements>
-		<element firePercent="50" />
+		<element deathPercent="-8" />
 		<element holyPercent="20" />
+		<element firePercent="50" />
 		<element energyPercent="-15" />
-		<element deathPercent="-10" />
 	</elements>
 	<immunities>
 		<immunity ice="1" />
 	</immunities>
 	<voices interval="5000" chance="10">
-		<voice sentence="Mupi! Si siyoqua jinuma!" />
-		<voice sentence="Siqsiq ji jusipa!" />
-		<voice sentence="Jagura taluka taqua!" />
-		<voice sentence="Quatu nguraka!" />
+		<voice sentence="Quatu nguraka!" yell="0" />
+		<voice sentence="Mupi! Si siyoqua jinuma!" yell="0" />
+		<voice sentence="Siqsiq ji jusipa!" yell="0" />
+		<voice sentence="Jagura taluka taqua!" yell="0" />
 	</voices>
 	<loot>
-		<item name="gold coin" countmax="26" chance="50000" />
-		<item name="brass helmet" chance="3250" />
-		<item name="bone shield" chance="950" />
-		<item id="2667" countmax="3" chance="29000" /><!-- fish -->
-		<item name="northern pike" chance="60" />
-		<item name="rainbow trout" chance="60" />
-		<item name="green perch" chance="60" />
+		<item name="Gold Coin" countmax="27" chance="72210" />
+		<item name="Fish" countmax="3" chance="29660" />
+		<item name="Brass Helmet" chance="4700" />
+		<item name="Bone Shield" chance="990" />
+		<item name="Green Perch" chance="110" />
+		<item name="Northern Pike" chance="70" />
+		<item name="Rainbow Trout" chance="40" />
 	</loot>
 </monster>

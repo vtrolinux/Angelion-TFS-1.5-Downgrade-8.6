@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<monster name="Enraged Bookworm" nameDescription="an enraged bookworm" race="blood" experience="55" speed="10" >
+<monster name="Enraged Bookworm" nameDescription="an enraged bookworm" race="blood" experience="55" speed="10">
 	<health now="145" max="145" />
 	<look type="3976" corpse="3976" />
 	<targetchange interval="4000" chance="10" />

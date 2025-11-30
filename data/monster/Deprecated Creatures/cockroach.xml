@@ -7,7 +7,7 @@
 		<flag summonable="0" />
 		<flag attackable="1" />
 		<flag hostile="0" />
-		<flag illusionable="0" />
+		<flag illusionable="1" />
 		<flag convinceable="0" />
 		<flag pushable="1" />
 		<flag canpushitems="0" />
@@ -19,6 +19,6 @@
 		<flag canwalkonpoison="0" />
 	</flags>
 	<loot>
-		<item name="cockroach leg" chance="100000" />
+		<item name="Cockroach Leg" chance="100000" />
 	</loot>
 </monster>

@@ -17,7 +17,7 @@
 		<flag runonhealth="429" />
 	</flags>
 	<attacks>
-		<attack name="melee" interval="2000" min="0" max="-83" />
+		<attack name="melee" interval="2000" min="0" max="-55" />
 	</attacks>
 	<defenses armor="15" defense="12">
 		<defense name="speed" interval="1000" chance="15" speedchange="290" duration="6000">
@@ -28,32 +28,30 @@
 		</defense>
 	</defenses>
 	<immunities>
-		<immunity energy="1" />
 		<immunity fire="1" />
-		<immunity earth="1" />
 		<immunity drunk="1" />
 	</immunities>
 	<voices interval="5000" chance="10">
-		<voice sentence="Feel the wrath of me dos attack!" />
-		<voice sentence="You're next!" />
-		<voice sentence="Gimme free gold!" />
-		<voice sentence="Me sooo smart!" />
-		<voice sentence="Me have a cheating link for you!" />
-		<voice sentence="Me is GM!" />
-		<voice sentence="Gimme your password!" />
-		<voice sentence="Me just need the code!" />
-		<voice sentence="Me not stink!" />
-		<voice sentence="Me other char is highlevel!" />
+		<voice sentence="Me other char is highlevel!" yell="0" />
+		<voice sentence="Feel the wrath of me dos attack!" yell="0" />
+		<voice sentence="Gimme free gold!" yell="0" />
+		<voice sentence="Me is GM!" yell="0" />
+		<voice sentence="Me have a cheating link for you!" yell="0" />
+		<voice sentence="Gimme your password!" yell="0" />
+		<voice sentence="Me just need the code!" yell="0" />
+		<voice sentence="You're next!" yell="0" />
+		<voice sentence="Me sooo smart!" yell="0" />
+		<voice sentence="Me not stink!" yell="0" />
 	</voices>
 	<loot>
-		<item id="2044" name="lamp" chance="6666" />
-		<item name="gold coin" countmax="12" chance="100000" />
-		<item name="battle axe" chance="5000" />
-		<item id="2381" name="halberd" chance="10000" />
-		<item name="axe" chance="10000" />
-		<item name="war hammer" chance="5000" />
-		<item id="2671" name="ham" chance="50000" />
-		<item id="6570" name="blue surprise bag" chance="5538" />
-		<item id="6571" name="red surprise bag" chance="1538" />
+		<item name="Lamp" id="2044" chance="6666" />
+		<item name="Cold Coin" countmax="12" chance="100000" />
+		<item name="Battle Axe" chance="5000" />
+		<item name="Halberd" chance="10000" />
+		<item name="Axe" chance="10000" />
+		<item name="War Hammer" chance="5000" />
+		<item name="Ham" chance="50000" />
+		<item name="Surprise Bag (Blue)" id="6570" chance="5538" />
+		<item name="Surprise Bag (Red)" id="6571" chance="1538" />
 	</loot>
 </monster>

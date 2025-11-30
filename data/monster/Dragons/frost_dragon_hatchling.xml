@@ -14,8 +14,10 @@
 		<flag canpushcreatures="1" />
 		<flag targetdistance="1" />
 		<flag staticattack="90" />
-		<flag runonhealth="80" />
+		<flag runonhealth="30" />
 		<flag canwalkonenergy="0" />
+		<flag canwalkonfire="1" />
+		<flag canwalkonpoison="1" />
 	</flags>
 	<attacks>
 		<attack name="melee" interval="2000" min="0" max="-160" />
@@ -39,21 +41,20 @@
 		<element energyPercent="-5" />
 	</elements>
 	<immunities>
-		<immunity fire="1" />
-		<immunity lifedrain="1" />
 		<immunity ice="1" />
-		<immunity earth="1" />
+		<immunity fire="1" />
 		<immunity invisible="1" />
+		<immunity paralyze="1" />
 	</immunities>
 	<voices interval="5000" chance="10">
-		<voice sentence="Rooawwrr" />
-		<voice sentence="Fchu?" />
+		<voice sentence="Rooawwrr" yell="0" />
+		<voice sentence="Fchu?" yell="0" />
 	</voices>
 	<loot>
-		<item name="gold coin" countmax="55" chance="86750" />
-		<item name="dragon ham" chance="79600" />
-		<item name="health potion" chance="560" />
-		<item name="spellbook of enlightenment" chance="400" />
-		<item name="frosty heart" chance="5000" />
+		<item name="Gold Coin" countmax="55" chance="87370" />
+		<item name="Dragon Ham" chance="79950" />
+		<item name="Frosty Heart" chance="5050" />
+		<item name="Health Potion" chance="560" />
+		<item name="Spellbook of Enlightenment" chance="490" />
 	</loot>
 </monster>

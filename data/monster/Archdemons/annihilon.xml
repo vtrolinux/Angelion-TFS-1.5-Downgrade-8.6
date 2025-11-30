@@ -48,13 +48,13 @@
 		<element deathPercent="95" />
 	</elements>
 	<immunities>
-		<immunity lifedrain="1" />
 		<immunity invisible="1" />
+		<immunity paralyze="1" />
 	</immunities>
 	<voices interval="5000" chance="10">
-		<voice sentence="Flee as long as you can!" />
-		<voice sentence="Annihilon's might will crush you all!" />
-		<voice sentence="I am coming for you!" />
+		<voice sentence="I am coming for you!" yell="0" />
+		<voice sentence="Flee as long as you can!" yell="0" />
+		<voice sentence="Annihilon's might will crush you all!" yell="0" />
 	</voices>
 	<loot>
 		<item id="2148" name="gold coin" chance="100000" countmax="100" />

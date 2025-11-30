@@ -16,44 +16,45 @@
 		<flag staticattack="90" />
 		<flag runonhealth="0" />
 		<flag canwalkonenergy="0" />
+		<flag canwalkonfire="1" />
 		<flag canwalkonpoison="0" />
 	</flags>
 	<attacks>
 		<attack name="melee" interval="2000" min="0" max="-35" />
-		<attack name="fire" interval="2000" chance="20" range="7" radius="4" target="1" min="-60" max="-90">
+		<attack name="fire" interval="2000" chance="20" range="7" radius="4" target="1" min="-60" max="-95">
 			<attribute key="shootEffect" value="fire" />
 			<attribute key="areaEffect" value="firearea" />
 		</attack>
-		<attack name="fire" interval="2000" chance="15" range="7" radius="2" target="1" min="-20" max="-50">
+		<attack name="fire" interval="2000" chance="15" range="7" radius="2" target="1" min="-60" max="-95">
 			<attribute key="shootEffect" value="fire" />
 			<attribute key="areaEffect" value="firearea" />
 		</attack>
 	</attacks>
 	<defenses armor="13" defense="13" />
 	<elements>
+		<element physicalPercent="10" />
+		<element deathPercent="20" />
+		<element holyPercent="-10" />
+		<element icePercent="-20" />
 		<element energyPercent="30" />
 		<element earthPercent="20" />
-		<element deathPercent="5" />
-		<element physicalPercent="-5" />
-		<element icePercent="-20" />
-		<element holyPercent="-10" />
 	</elements>
 	<immunities>
 		<immunity fire="1" />
 	</immunities>
 	<voices interval="5000" chance="10">
-		<voice sentence="Hot, eh?" />
-		<voice sentence="Hell, oh, hell!" />
+		<voice sentence="Hot, eh?" yell="0" />
+		<voice sentence="Hell, oh, hell!" yell="0" />
 	</voices>
 	<loot>
-		<item name="small pitchfork" chance="19770" />
-		<item name="blank rune" chance="11000" />
-		<item id="2419" chance="3000" /><!-- scimitar -->
-		<item id="2050" countmax="2" chance="1370" /><!-- torch -->
-		<item name="double axe" chance="1200" />
-		<item name="cleaver" chance="920" />
-		<item name="necrotic rod" chance="460" />
-		<item name="small amethyst" chance="280" />
-		<item name="guardian shield" chance="210" />
+		<item name="Small Pitchfork" chance="19470" />
+		<item name="Blank Rune" chance="10910" />
+		<item name="Scimitar" chance="3000" />
+		<item name="Torch" countmax="2" chance="1380" />
+		<item name="Double Axe" chance="1360" />
+		<item name="Cleaver" chance="970" />
+		<item name="Necrotic Rod" chance="490" />
+		<item name="Small Amethyst" chance="280" />
+		<item name="Guardian Shield" chance="220" />
 	</loot>
 </monster>

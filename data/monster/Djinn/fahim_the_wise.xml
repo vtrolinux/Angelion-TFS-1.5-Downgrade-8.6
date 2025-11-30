@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<monster name="Fahim The Wise" nameDescription="Fahim The Wise" race="blood" experience="1500" speed="200">
+<monster name="Fahim the Wise" nameDescription="Fahim the Wise" race="blood" experience="1500" speed="200">
 	<health now="2000" max="2000" />
 	<look type="104" corpse="6033" />
 	<targetchange interval="2000" chance="5" />
 	<flags>
+		<flag summonable="0" />
+		<flag illusionable="0" />
+		<flag convinceable="0" />
 		<flag isboss="1" />
 		<flag pushable="0" />
 		<flag canpushitems="0" />
 		<flag canpushcreatures="0" />
-		<flag staticattack="90" />
 		<flag targetdistance="1" />
+		<flag staticattack="90" />
+		<flag runonhealth="0" />
 		<flag canwalkonenergy="0" />
 		<flag canwalkonfire="0" />
 		<flag canwalkonpoison="0" />
@@ -19,33 +23,22 @@
 		<attack name="energy" interval="2000" chance="10" range="7" min="-100" max="-300">
 			<attribute key="shootEffect" value="energyball" />
 		</attack>
-		<attack name="lifedrain" interval="2000" chance="15" range="7" min="-30" max="-90">
-			<attribute key="areaEffect" value="redshimmer" />
-		</attack>
-		<attack name="speed" interval="2000" chance="15" range="7" speedchange="-650" duration="1500">
-			<attribute key="areaEffect" value="redshimmer" />
-		</attack>
-		<attack name="drunk" interval="2000" chance="10" range="7" duration="6000">
-			<attribute key="shootEffect" value="energy" />
-		</attack>
-		<attack name="outfit" interval="2000" chance="1" range="7" monster="rabbit" duration="4000">
-			<attribute key="areaEffect" value="blueshimmer" />
+		<attack name="fire" interval="2000" chance="15" range="7" radius="5" target="1" min="-210" max="-250">
+			<attribute key="areaEffect" value="firearea" />
+			<attribue key="shootEffect" value="fire" />
 		</attack>
 		<attack name="djinn electrify" interval="2000" range="5" chance="15" />
-		<attack name="energy" interval="2000" chance="15" radius="3" target="0" min="-30" max="-90">
-			<attribute key="areaEffect" value="energy" />
-		</attack>
 	</attacks>
 	<defenses armor="30" defense="30">
-		<defense name="healing" interval="2000" chance="15" min="50" max="80">
+		<defense name="healing" interval="2000" chance="15" min="100" max="170">
 			<attribute key="areaEffect" value="blueshimmer" />
 		</defense>
 	</defenses>
 	<elements>
-		<element firePercent="1" />
-		<element icePercent="-15" />
-		<element holyPercent="1" />
 		<element deathPercent="-10" />
+		<element holyPercent="1" />
+		<element icePercent="-15" />
+		<element firePercent="1" />
 	</elements>
 	<immunities>
 		<immunity paralyze="1" />
@@ -53,22 +46,23 @@
 		<immunity drunk="1" />
 	</immunities>
 	<voices interval="1000" chance="5">
-		<voice sentence="You should know better than to be an enemy of the Marid" />
+		<voice sentence="You should know better than to be an enemy of the Marid" yell="0" />
 	</voices>
 	<loot>
-		<item id="5912" name="blue piece of cloth" chance="100000" countmax="4" />
-		<item id="12426" name="jewelled belt" chance="100000" />
-		<item id="2148" name="gold coin" chance="95918" countmax="118" />
-		<item id="12442" name="noble turban" chance="65306" />
-		<item id="7378" name="royal spear" chance="55102" countmax="3" />
-		<item id="2677" name="blueberry" chance="40816" countmax="21" />
-		<item id="11227" name="shiny stone" chance="40816" />
-		<item id="7589" name="strong mana potion" chance="40816" countmax="3" />
-		<item id="2663" name="mystic turban" chance="34694" />
-		<item id="2146" name="small sapphire" chance="14286" countmax="2" />
-		<item id="7732" name="seeds" chance="8163" />
-		<item id="7900" name="magma monocle" chance="4082" />
-		<item id="2158" name="blue gem" chance="2041" />
-		<item id="2070" name="wooden flute" chance="2041" />
+		<item name="Blue Piece of Cloth" countmax="4" chance="100000" />
+		<item name="Jewelled Belt" chance="100000" />
+		<item name="Gold Coin" countmax="100" chance="94740" />
+		<item name="Gold Coin" countmax="18" chance="94740" />
+		<item name="Noble Turban" chance="64910" />
+		<item name="Royal Spear" countmax="3" chance="50880" />
+		<item name="Shiny Stone" chance="40350" />
+		<item name="Strong Mana Potion" countmax="3" chance="40350" />
+		<item name="Blueberry" countmax="21" chance="36840" />
+		<item name="Mystic Turban" chance="35090" />
+		<item name="Small Sapphire" countmax="2" chance="14040" />
+		<item name="Seeds" chance="8770" />
+		<item name="Magma Monocle" chance="3510" />
+		<item name="Blue Gem" chance="1750" />
+		<item name="Wooden Flute" chance="1750" />
 	</loot>
 </monster>

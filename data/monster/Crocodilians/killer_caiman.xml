@@ -7,7 +7,7 @@
 		<flag summonable="0" />
 		<flag attackable="1" />
 		<flag hostile="1" />
-		<flag illusionable="0" />
+		<flag illusionable="1" />
 		<flag convinceable="0" />
 		<flag pushable="0" />
 		<flag canpushitems="1" />
@@ -29,21 +29,22 @@
 	</defenses>
 	<elements>
 		<element physicalPercent="10" />
+		<element icePercent="10" />
 		<element energyPercent="-5" />
 		<element earthPercent="20" />
-		<element icePercent="10" />
 	</elements>
 	<immunities>
 		<immunity invisible="1" />
 	</immunities>
 	<loot>
-		<item id="2148" name="gold coin" chance="99997" countmax="180" />
-		<item id="2671" name="ham" chance="39807" />
-		<item id="11196" name="piece of crocodile leather" chance="24966" countmax="2" />
-		<item id="2149" name="small emerald" chance="9963" countmax="5" />
-		<item id="2425" name="obsidian lance" chance="4982" />
-		<item id="11245" name="bunch of ripe rice" chance="4828" countmax="2" />
-		<item id="7632" name="giant shimmering pearl (green)" chance="974" />
-		<item id="3982" name="crocodile boots" chance="486" />
+		<item name="Gold Coin" countmax="100" chance="100000" />
+		<item name="Gold Coin" countmax="80" chance="100000" />
+		<item name="Ham" chance="39820" />
+		<item name="Piece of Crocodile Leather" countmax="2" chance="25050" />
+		<item name="Small Emerald" countmax="5" chance="9960" />
+		<item name="Obsidian Lance" chance="4980" />
+		<item name="Bunch of Ripe Rice" countmax="2" chance="4910" />
+		<item name="Giant Shimmering Pearl (Green)" chance="990" />
+		<item name="Crocodile Boots" chance="500" />
 	</loot>
 </monster>

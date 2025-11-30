@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<monster name="Primitive" nameDescription="Primitive" race="blood" experience="45" speed="300">
+<monster name="Primitive" nameDescription="a primitive" race="blood" experience="45" speed="300">
 	<health now="200" max="200" />
 	<look type="143" head="1" body="1" legs="1" feet="1" corpse="6080" />
 	<targetchange interval="5000" chance="8" />
@@ -12,54 +12,70 @@
 		<flag pushable="0" />
 		<flag canpushitems="1" />
 		<flag canpushcreatures="1" />
-		<flag staticattack="90" />
 		<flag targetdistance="1" />
+		<flag staticattack="90" />
 		<flag runonhealth="5" />
 	</flags>
 	<attacks>
-		<attack name="melee" interval="2000" min="0" max="-32" />
-		<attack name="drunk" interval="1000" chance="20" range="7">
-			<attribute key="shootEffect" value="energy" />
+		<attack name="melee" interval="2000" min="0" max="-35" />
+		<attack name="drunk" interval="1000" chance="2" radius="4" target="0" duration="10000">
+			<attribute key="areaEffect" value="bluebubble" />
+		</attack>
+		<attack name="firefield" interval="1000" chance="15" range="7" radius="1" target="1">
+			<attribute key="shootEffect" value="fire" />
 		</attack>
 		<attack name="fire" interval="1000" chance="34" range="7" radius="3" target="1" min="-20" max="-20">
 			<attribute key="shootEffect" value="fire" />
-			<attribute key="areaEffect" value="firearea" />
+			<attribute key="areaEffect" value="redfireworks" />
 		</attack>
 		<attack name="outfit" interval="1000" chance="2" radius="4" target="0" monster="primitive" duration="10000">
-			<attribute key="areaEffect" value="bluebubble" />
+			<attribute key="areaEffect" value="giftwraps" />
 		</attack>
 	</attacks>
-	<defenses armor="20" defense="25" />
+	<defenses armor="20" defense="25">
+		<defense name="speed" interval="2000" chance="15" speedchange="200" duration="5000">
+			<attribute key="areaEffect" value="redshimmer" />
+		</defense>
+		<defense name="healing" interval="1000" chance="15" min="10" max="25">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
 	<immunities>
-		<immunity energy="1" />
 		<immunity fire="1" />
-		<immunity drunk="1" />
-		<immunity invisible="1" />
+		<immunity energy="1" />
+		<immunity invisible="0" />
+		<immunity paralyze="0" />
 	</immunities>
 	<voices interval="5000" chance="10">
-		<voice sentence="We don't need a future!" />
-		<voice sentence="I'll rook you all!" />
-		<voice sentence="They thought they'd beaten us!" />
-		<voice sentence="You are history!" />
-		<voice sentence="There can only be one world!" />
-		<voice sentence="Valor who?" />
-		<voice sentence="Die noob!" />
-		<voice sentence="There are no dragons!" />
-		<voice sentence="I'll quit forever! Again..." />
-		<voice sentence="You all are noobs!" />
-		<voice sentence="Beware of the cyclops!" />
-		<voice sentence="Just had a disconnect." />
-		<voice sentence="Magic is only good for girls!" />
-		<voice sentence="We'll be back!" />
+		<voice sentence="Magic is only good for girls!" yell="0" />
+		<voice sentence="I'll rook you all!" yell="0" />
+		<voice sentence="There are no dragons!" yell="0" />
+		<voice sentence="There can only be one world!" yell="0" />
+		<voice sentence="We'll be back!" yell="0" />
+		<voice sentence="You are history!" yell="0" />
+		<voice sentence="Back to the roots!" yell="0" />
+		<voice sentence="You all are noobs!" yell="0" />
+		<voice sentence="Just had a disconnect." yell="0" />
+		<voice sentence="They thought they'd beaten us!" yell="0" />
+		<voice sentence="They've ruined it! I can't cheat anymore!" yell="0" />
+		<voice sentence="Uh, I can't hear anymore. I am deaf!" yell="0" />
+		<voice sentence="Die noob!" yell="0" />
+		<voice sentence="We don't need a future!" yell="0" />
+		<voice sentence="Guido who?" yell="0" />
+		<voice sentence="I need some vitamins!" yell="0" />
+		<voice sentence="Kill all magic users!" yell="0" />
+		<voice sentence="This world is ours!" yell="0" />
+		<voice sentence="Beware of the cyclops!" yell="0" />
+		<voice sentence="I'll quit forever! Again ..." yell="0" />
 	</voices>
 	<loot>
-		<item name="gold coin" countmax="10" chance="12500" />
-		<item name="sabre" chance="10250" />
-		<item name="axe" chance="12250" />
-		<item name="studded helmet" chance="9500" />
-		<item id="2484" name="studded armor" chance="7000" />
-		<item id="2526" name="studded shield" chance="1200" />
-		<item id="6570" name="blue surprise bag" chance="500" />
-		<item id="6571" name="red surprise bag" chance="500" />
+		<item name="Gold Coin" countmax="10" chance="12500" />
+		<item name="Sabre" chance="10250" />
+		<item name="Axe" chance="12250" />
+		<item name="Studded Helmet" chance="9500" />
+		<item name="Studded Armor" chance="7000" />
+		<item name="Studded Shield" chance="1200" />
+		<item name="Surprise Bag (Blue)" chance="500" />
+		<item name="Surprise Bag (Red)" chance="500" />
 	</loot>
 </monster>

@@ -7,7 +7,7 @@
 		<flag summonable="0" />
 		<flag attackable="1" />
 		<flag hostile="1" />
-		<flag illusionable="1" />
+		<flag illusionable="0" />
 		<flag convinceable="0" />
 		<flag pushable="0" />
 		<flag canpushitems="1" />
@@ -16,6 +16,8 @@
 		<flag staticattack="70" />
 		<flag runonhealth="250" />
 		<flag canwalkonenergy="0" />
+		<flag canwalkonfire="1" />
+		<flag canwalkonpoison="1" />
 	</flags>
 	<attacks>
 		<attack name="melee" interval="2000" min="0" max="-225" />
@@ -42,7 +44,7 @@
 		</attack>
 	</attacks>
 	<defenses armor="38" defense="38">
-		<defense name="healing" interval="2000" chance="10" min="150" max="200">
+		<defense name="healing" interval="2000" chance="10" min="190" max="200">
 			<attribute key="areaEffect" value="blueshimmer" />
 		</defense>
 		<defense name="speed" interval="2000" chance="15" speedchange="290" duration="5000">
@@ -54,36 +56,36 @@
 		<element deathPercent="10" />
 	</elements>
 	<immunities>
-		<immunity lifedrain="1" />
-		<immunity paralyze="1" />
-		<immunity invisible="1" />
-		<immunity fire="1" />
 		<immunity ice="1" />
-		<immunity earth="1" />
+		<immunity fire="1" />
+		<immunity invisible="1" />
+		<immunity paralyze="1" />
 	</immunities>
 	<voices interval="5000" chance="10">
-		<voice sentence="YOU WILL FREEZE!" yell="1" />
+		<voice sentence="Chill out!" yell="0" />
 		<voice sentence="ZCHHHHH!" yell="1" />
-		<voice sentence="I am so cool." />
-		<voice sentence="Chill out!" />
+		<voice sentence="I am so cool." yell="0" />
+		<voice sentence="YOU WILL FREEZE!" yell="1" />
 	</voices>
 	<loot>
-		<item id="2148" name="gold coin" chance="95017" countmax="243" />
-		<item id="2672" name="dragon ham" chance="79868" />
-		<item id="2796" name="green mushroom" chance="12151" />
-		<item id="1976" name="book (gemmed)" chance="8835" />
-		<item id="2547" name="power bolt" chance="5895" countmax="6" />
-		<item id="2146" name="small sapphire" chance="5092" />
-		<item id="2167" name="energy ring" chance="4952" />
-		<item id="7441" name="ice cube" chance="4089" />
-		<item id="2033" name="golden mug" chance="3081" />
-		<item id="2177" name="life crystal" chance="608" />
-		<item id="7290" name="shard" chance="524" />
-		<item id="2479" name="strange helmet" chance="453" />
-		<item id="2396" name="ice rapier" chance="342" />
-		<item id="2528" name="tower shield" chance="291" />
-		<item id="2498" name="royal helmet" chance="206" />
-		<item id="2492" name="dragon scale mail" chance="111" />
-		<item id="7402" name="dragon slayer" chance="97" />
+		<item name="Gold Coin" countmax="100" chance="95020" />
+		<item name="Gold Coin" countmax="100" chance="95020" />
+		<item name="Gold Coin" countmax="43" chance="95020" />
+		<item name="Dragon Ham" countmax="3" chance="79870" />
+		<item name="Green Mushroom" chance="12170" />
+		<item name="Book (Gemmed)" chance="8860" />
+		<item name="Power Bolt" countmax="6" chance="5870" />
+		<item name="Small Sapphire" chance="5090" />
+		<item name="Energy Ring" chance="4960" />
+		<item name="Ice Cube" chance="4080" />
+		<item name="Golden Mug" chance="3090" />
+		<item name="Life Crystal" chance="600" />
+		<item name="Shard" chance="520" />
+		<item name="Strange Helmet" chance="450" />
+		<item name="Ice Rapier" chance="340" />
+		<item name="Tower Shield" chance="290" />
+		<item name="Royal Helmet" chance="200" />
+		<item name="Dragon Scale Mail" chance="110" />
+		<item name="Dragon Slayer" chance="100" />
 	</loot>
 </monster>

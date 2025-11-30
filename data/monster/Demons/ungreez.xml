@@ -19,10 +19,10 @@
 	</flags>
 	<attacks>
 		<attack name="melee" interval="2000" min="0" max="-480" />
-		<attack name="manadrain" interval="2000" chance="13" range="7" min="0" max="-110">
+		<attack name="manadrain" interval="2000" chance="13" range="7" min="-80" max="-140">
 			<attribute key="shootEffect" value="suddendeath" />
 		</attack>
-		<attack name="fire" interval="1000" chance="14" range="7" radius="7" target="1" min="-150" max="-250">
+		<attack name="fire" interval="1000" chance="14" range="7" radius="7" target="1" min="-180" max="-250">
 			<attribute key="shootEffect" value="fire" />
 			<attribute key="areaEffect" value="firearea" />
 		</attack>
@@ -40,11 +40,14 @@
 		</defense>
 	</defenses>
 	<elements>
-		<element physicalPercent="25" />
-		<element icePercent="-15" />
+		<element physicalPercent="30" />
+		<element deathPercent="20" />
+		<element holyPercent="-5" />
+		<element icePercent="-5" />
+		<element energyPercent="55" />
+		<element earthPercent="60" />
 	</elements>
 	<immunities>
-		<immunity energy="1" />
 		<immunity fire="1" />
 		<immunity lifedrain="1" />
 		<immunity paralyze="1" />
@@ -53,13 +56,13 @@
 		<immunity invisible="1" />
 	</immunities>
 	<voices interval="5000" chance="10">
-		<voice sentence="I'll teach you that even heros can die" yell="1" />
-		<voice sentence="You wil die Begging like the others did" yell="1" />
+		<voice sentence="I teach you that even heroes can die!" yell="0" />
+		<voice sentence="You will die begging like the others did!" yell="0" />
 	</voices>
 	<loot>
-		<item name="gold coin" countmax="90" chance="21000" />
-		<item name="fire mushroom" countmax="6" chance="10000" />
-		<item name="great mana potion" chance="20000" />
-		<item name="great health potion" chance="20000" />
+		<item name="Gold Coin" countmax="100" chance="40000" />
+		<item name="Fire Mushroom" countmax="6" chance="20000" />
+		<item name="Great Health Potion" chance="8000" />
+		<item name="Great Mana Potion" chance="8000" />
 	</loot>
 </monster>

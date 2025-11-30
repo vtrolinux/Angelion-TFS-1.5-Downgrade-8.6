@@ -7,7 +7,7 @@
 		<flag summonable="0" />
 		<flag attackable="1" />
 		<flag hostile="1" />
-		<flag illusionable="1" />
+		<flag illusionable="0" />
 		<flag convinceable="0" />
 		<flag pushable="0" />
 		<flag canpushitems="1" />
@@ -16,6 +16,7 @@
 		<flag staticattack="70" />
 		<flag runonhealth="0" />
 		<flag canwalkonenergy="0" />
+		<flag canwalkonfire="1" />
 		<flag canwalkonpoison="0" />
 	</flags>
 	<attacks>
@@ -34,12 +35,12 @@
 			<attribute key="areaEffect" value="blackspark" />
 		</attack>
 		<attack name="death" interval="2000" chance="10" range="7" min="-125" max="-250">
-			<attribute key="shootEffect" value="suddendeath" />
+			<attribute key="shootEffect" value="throwingstar" />
 			<attribute key="areaEffect" value="mortarea" />
 			<attribute key="areaEffect" value="smallclouds" />
 		</attack>
 		<attack name="speed" interval="2000" chance="15" range="7" speedchange="-800" duration="30000">
-			<attribute key="shootEffect" value="suddendeath" />
+			<attribute key="shootEffect" value="throwingstar" />
 			<attribute key="areaEffect" value="mortarea" />
 			<attribute key="areaEffect" value="smallclouds" />
 		</attack>
@@ -50,46 +51,45 @@
 		</defense>
 	</defenses>
 	<elements>
-		<element icePercent="30" />
-		<element holyPercent="30" />
+		<element physicalPercent="-10" />
 		<element deathPercent="-10" />
+		<element holyPercent="30" />
+		<element icePercent="30" />
 		<element energyPercent="-10" />
 		<element earthPercent="-10" />
-		<element physicalPercent="-10" />
 	</elements>
 	<immunities>
-		<immunity paralyze="1" />
-		<immunity invisible="1" />
 		<immunity fire="1" />
+		<immunity invisible="1" />
+		<immunity paralyze="1" />
 	</immunities>
 	<voices interval="5000" chance="10">
-		<voice sentence="Ahhhhrrrr!" />
-		<voice sentence="Waaaaah!" />
-		<voice sentence="Carnage!" />
-		<voice sentence="Dieee!" />
+		<voice sentence="Ahhhhrrrr!" yell="0" />
+		<voice sentence="Waaaaah!" yell="0" />
+		<voice sentence="Dieee!" yell="0" />
+		<voice sentence="Caaarnaaage!" yell="0" />
 	</voices>
 	<loot>
-		<item id="2120" countmax="3" chance="8000" /><!-- small amethyst -->
-		<item id="2124" chance="410" /><!-- crystal ring-->
-		<item name="gold coin" countmax="100" chance="30000" />
-		<item name="gold coin" countmax="100" chance="30000" />
-		<item name="gold coin" countmax="69" chance="38000" />
-		<item name="platinum coin" countmax="4" chance="2800" />
-		<item name="terra rod" chance="20000" />
-		<item name="golden legs" chance="130" />
-		<item name="steel boots" chance="790" />
-		<item name="meat" chance="25000" />
-		<item name="orichalcum pearl" countmax="4" chance="1500" />
-		<item name="red piece of cloth" chance="4000" />
-		<item name="soul orb" chance="21500" />
-		<item name="soul orb" chance="50" />
-		<item id="6301" chance="60" /><!-- death ring-->
-		<item name="demonic essence" chance="22500" />
-		<item name="flask of demonic blood" countmax="3" chance="35000" />
-		<item name="assassin dagger" chance="660" />
-		<item name="noble axe" chance="2000" />
-		<item name="great health potion" chance="10500" />
-		<item name="jalapeno pepper" countmax="4" chance="29280" />
-		<item id="9813" chance="1920" /><!-- rusty legs (rare) -->
+		<item name="Gold Coin" countmax="100" chance="98740" />
+		<item name="Gold Coin" countmax="100" chance="98740" />
+		<item name="Gold Coin" countmax="74" chance="98740" />
+		<item name="Flask of Demonic Blood" chance="34440" />
+		<item name="Jalapeno Pepper" countmax="4" chance="30010" />
+		<item name="Demonic Essence" chance="22240" />
+		<item name="Terra Rod" chance="20400" />
+		<item name="Soul Orb" chance="19510" />
+		<item name="Great Health Potion" chance="10660" />
+		<item name="Slightly Rusted Legs" chance="10240" />
+		<item name="Small Amethyst" countmax="3" chance="7910" />
+		<item name="Red Piece of Cloth" chance="4170" />
+		<item name="Platinum Coin" countmax="4" chance="2310" />
+		<item name="Noble Axe" chance="1870" />
+		<item name="Orichalcum Pearl" countmax="4" chance="1400" />
+		<item name="Assassin Dagger" chance="890" />
+		<item name="Steel Boots" chance="580" />
+		<item name="Crystal Ring" chance="470" />
+		<item name="Assassin Star" chance="180" />
+		<item name="Golden Legs" chance="60" />
+		<item name="Death Ring" chance="40" />
 	</loot>
 </monster>

@@ -34,29 +34,31 @@
 		</defense>
 	</defenses>
 	<elements>
+		<element physicalPercent="-5" />
 		<element deathPercent="50" />
 		<element holyPercent="50" />
-		<element physicalPercent="-5" />
 	</elements>
 	<immunities>
 		<immunity invisible="1" />
+		<immunity paralyze="0" />
 	</immunities>
 	<voices interval="5000" chance="10">
-		<voice sentence="Huhuhuhuuu!" />
-		<voice sentence="Let the fun begin!" />
-		<voice sentence="Yihahaha!" />
-		<voice sentence="I'll bite you! Nyehehehehe!" />
+		<voice sentence="Huhuhuhuuu!" yell="0" />
+		<voice sentence="Let the fun begin!" yell="0" />
+		<voice sentence="I'll bite you! Nyehehehe!" yell="0" />
+		<voice sentence="Yihahaha!" yell="0" />
+		<voice sentence="Nyarnyarnyarnyar." yell="0" />
 	</voices>
 	<loot>
-		<item name="brown flask" chance="8750" />
-		<item name="small sapphire" chance="360" />
-		<item name="gold coin" countmax="70" chance="52500" />
-		<item name="dwarven ring" chance="190" />
-		<item name="battle axe" chance="3100" />
-		<item name="sabre" chance="8250" />
-		<item name="morning star" chance="5000" />
-		<item name="serpent sword" chance="250" />
-		<item name="clerical mace" chance="900" />
-		<item name="plate shield" chance="10000" />
+		<item name="Gold Coin" countmax="70" chance="82190" />
+		<item name="Plate Shield" chance="10030" />
+		<item name="Brown Flask" chance="9040" />
+		<item name="Sabre" chance="8090" />
+		<item name="Morning Star" chance="5110" />
+		<item name="Battle Axe" chance="3090" />
+		<item name="Clerical Mace" chance="780" />
+		<item name="Small Sapphire" chance="390" />
+		<item name="Serpent Sword" chance="300" />
+		<item name="Dwarven Ring" chance="210" />
 	</loot>
 </monster>

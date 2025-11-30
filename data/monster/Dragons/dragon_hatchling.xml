@@ -13,9 +13,10 @@
 		<flag canpushitems="1" />
 		<flag canpushcreatures="1" />
 		<flag targetdistance="1" />
-		<flag runonhealth="20" />
 		<flag staticattack="90" />
+		<flag runonhealth="20" />
 		<flag canwalkonenergy="0" />
+		<flag canwalkonfire="1" />
 		<flag canwalkonpoison="0" />
 	</flags>
 	<attacks>
@@ -34,23 +35,23 @@
 		</defense>
 	</defenses>
 	<elements>
-		<element earthPercent="75" />
 		<element icePercent="-10" />
 		<element energyPercent="-5" />
+		<element earthPercent="75" />
 	</elements>
 	<immunities>
-		<immunity paralyze="1" />
-		<immunity invisible="1" />
 		<immunity fire="1" />
+		<immunity invisible="1" />
+		<immunity paralyze="1" />
 	</immunities>
 	<voices interval="5000" chance="10">
-		<voice sentence="Fchu?" />
-		<voice sentence="Rooawwrr" />
+		<voice sentence="Rooawwrr" yell="0" />
+		<voice sentence="Fchu?" yell="0" />
 	</voices>
 	<loot>
-		<item name="gold coin" countmax="55" chance="67500" />
-		<item name="dragon ham" chance="61000" />
-		<item name="health potion" chance="400" />
-		<item name="dragon's tail" chance="4300" />
+		<item name="Gold Coin" countmax="55" chance="82070" />
+		<item name="Dragon Ham" chance="74430" />
+		<item name="Dragon's Tail" chance="4670" />
+		<item name="Health Potion" chance="480" />
 	</loot>
 </monster>

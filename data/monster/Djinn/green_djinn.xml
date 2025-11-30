@@ -20,11 +20,11 @@
 		<flag canwalkonpoison="0" />
 	</flags>
 	<attacks>
-		<attack name="melee" interval="2000" min="0" max="-110" />
-		<attack name="fire" interval="2000" chance="15" range="7" min="-45" max="-80">
+		<attack name="melee" interval="2000" min="0" max="-100" />
+		<attack name="fire" interval="2000" chance="15" range="7" min="-45" max="-75">
 			<attribute key="shootEffect" value="fire" />
 		</attack>
-		<attack name="death" interval="2000" chance="10" range="7" target="1" radius="1" min="-50" max="-105">
+		<attack name="lifedrain" interval="2000" chance="10" radius="1" target="1" range="7" min="-60" max="-105">
 			<attribute key="shootEffect" value="suddendeath" />
 			<attribute key="areaEffect" value="mortarea" />
 			<attribute key="areaEffect" value="smallclouds" />
@@ -48,27 +48,28 @@
 		<element deathPercent="20" />
 	</elements>
 	<immunities>
-		<immunity paralyze="1" />
 		<immunity invisible="1" />
+		<immunity paralyze="1" />
 	</immunities>
 	<voices interval="1000" chance="5">
-		<voice sentence="Good wishes are for fairytales" />
-		<voice sentence="I wish you a merry trip to hell!" />
-		<voice sentence="Muhahahaha!" />
-		<voice sentence="I grant you a deathwish!" />
-		<voice sentence="Tell me your last wish!" />
+		<voice sentence="I grant you a deathwish!" yell="0" />
+		<voice sentence="Tell me your last wish!" yell="0" />
+		<voice sentence="Good wishes are for fairytales" yell="0" />
+		<voice sentence="Muhahahaha!" yell="0" />
+		<voice sentence="I wish you a merry trip to hell!" yell="0" />
 	</voices>
 	<loot>
-		<item id="2148" name="gold coin" chance="88234" countmax="115" />
-		<item id="3607" name="cheese" chance="24327" />
-		<item id="7378" name="royal spear" chance="5046" countmax="2" />
-		<item id="2149" name="small emerald" chance="2933" countmax="4" />
-		<item id="1965" name="book (green)" chance="2295" />
-		<item id="12412" name="dirty turban" chance="2121" />
-		<item id="5910" name="green piece of cloth" chance="2005" />
-		<item id="2747" name="grave flower" chance="953" />
-		<item id="2063" name="small oil lamp" chance="870" />
-		<item id="7620" name="mana potion" chance="481" />
-		<item id="2663" name="mystic turban" chance="116" />
+		<item name="Gold Coin" countmax="100" chance="88430" />
+		<item name="Gold Coin" countmax="15" chance="88430" />
+		<item name="Cheese" chance="24340" />
+		<item name="Royal Spear" countmax="2" chance="5100" />
+		<item name="Small Emerald" countmax="4" chance="2900" />
+		<item name="Book (Green)" chance="2350" />
+		<item name="Dirty Turban" chance="2130" />
+		<item name="Green Piece of Cloth" chance="2040" />
+		<item name="Grave Flower" chance="960" />
+		<item name="Small Oil Lamp" chance="840" />
+		<item name="Mana Potion" chance="490" />
+		<item name="Mystic Turban" chance="120" />
 	</loot>
 </monster>
