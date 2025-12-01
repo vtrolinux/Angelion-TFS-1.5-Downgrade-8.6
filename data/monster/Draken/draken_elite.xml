@@ -7,7 +7,7 @@
 		<flag summonable="0" />
 		<flag attackable="1" />
 		<flag hostile="1" />
-		<flag illusionable="1" />
+		<flag illusionable="0" />
 		<flag convinceable="0" />
 		<flag pushable="0" />
 		<flag canpushitems="1" />
@@ -15,6 +15,11 @@
 		<flag targetdistance="1" />
 		<flag staticattack="90" />
 		<flag runonhealth="0" />
+		<flag canwalkonenergy="1" />
+		<flag canwalkonfire="1" />
+		<flag canwalkonpoison="1" />
+		<flag lightlevel="3" />
+		<flag lightcolor="110" />
 	</flags>
 	<attacks>
 		<attack name="melee" interval="2000" min="0" max="-354" />
@@ -25,7 +30,7 @@
 			<attribute key="shootEffect" value="fire" />
 			<attribute key="areaEffect" value="firearea" />
 		</attack>
-		<attack name="earth" interval="2000" chance="15" target="1" radius="4" min="-280" max="-410">
+		<attack name="earth" interval="2000" chance="15" target="1" radius="4" min="-170" max="-370">
 			<attribute key="areaEffect" value="poff" />
 		</attack>
 		<attack name="monster soulfire" interval="2000" chance="10" />
@@ -34,7 +39,7 @@
 		</attack>
 	</attacks>
 	<defenses armor="45" defense="45">
-		<defense name="healing" interval="2000" chance="15" min="510" max="600">
+		<defense name="healing" interval="2000" chance="15" min="1" max="200">
 			<attribute key="areaEffect" value="blueshimmer" />
 		</defense>
 	</defenses>
@@ -47,34 +52,35 @@
 		<immunity fire="1" />
 		<immunity earth="1" />
 		<immunity invisible="1" />
+		<immunity paralyze="0" />
 	</immunities>
 	<voices interval="5000" chance="10">
-		<voice sentence="For ze emperor!" />
-		<voice sentence="You will die zhouzandz deazhz!" />
+		<voice sentence="You will die zhouzandz deazhz!" yell="0" />
+		<voice sentence="For ze emperor!" yell="0" />
 	</voices>
 	<loot>
-		<item name="small diamond" countmax="4" chance="2440" />
-		<item name="gold coin" countmax="100" chance="50000" />
-		<item name="gold coin" countmax="100" chance="47000" />
-		<item name="platinum coin" countmax="8" chance="50360" />
-		<item name="meat" chance="30175" />
-		<item name="magic sulphur" chance="2100" />
-		<item name="assassin dagger" chance="980" />
-		<item name="great mana potion" countmax="3" chance="9340" />
-		<item name="ultimate health potion" countmax="3" chance="9250" />
-		<item name="Zaoan armor" chance="490" />
-		<item name="Zaoan helmet" chance="150" />
-		<item name="Zaoan legs" chance="770" />
-		<item name="Zaoan sword" chance="490" />
-		<item name="elite draken mail" chance="110" />
-		<item name="twiceslicer" chance="910" />
-		<item name="draken sulphur" chance="7600" />
-		<item name="draken wristbands" chance="14030" />
-		<item name="broken draken mail" chance="16930" />
-		<item name="broken slicer" chance="24670" />
-		<item name="cobra crown" chance="10" />
-		<item name="draken boots" chance="600" />
-		<item name="snake god's wristguard" chance="80" />
-		<item name="blade of corruption" chance="20" />
+		<item name="Gold Coin" countmax="100" chance="97110" />
+		<item name="Gold Coin" countmax="100" chance="97110" />
+		<item name="Platinum Coin" countmax="8" chance="50090" />
+		<item name="Meat" chance="29960" />
+		<item name="Broken Slicer" chance="24940" />
+		<item name="Broken Draken Mail" chance="17720" />
+		<item name="Draken Wristbands" chance="14180" />
+		<item name="Ultimate Health Potion" countmax="3" chance="9300" />
+		<item name="Great Mana Potion" countmax="3" chance="9000" />
+		<item name="Draken Sulphur" chance="8080" />
+		<item name="Small Diamond" countmax="4" chance="2460" />
+		<item name="Magic Sulphur" chance="2050" />
+		<item name="Assassin Dagger" chance="890" />
+		<item name="Zaoan Legs" chance="860" />
+		<item name="Twiceslicer" chance="860" />
+		<item name="Draken Boots" chance="580" />
+		<item name="Zaoan Armor" chance="570" />
+		<item name="Zaoan Sword" chance="490" />
+		<item name="Zaoan Helmet" chance="150" />
+		<item name="Elite Draken Mail" chance="90" />
+		<item name="Snake God's Wristguard" chance="50" />
+		<item name="Blade of Corruption" chance="40" />
+		<item name="Cobra Crown" chance="10" />
 	</loot>
 </monster>

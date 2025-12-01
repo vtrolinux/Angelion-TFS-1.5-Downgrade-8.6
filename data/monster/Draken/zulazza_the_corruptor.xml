@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<monster name="Zulazza the Corruptor" nameDescription="Zulazza The Corruptor" race="blood" experience="10000" speed="290">
+<monster name="Zulazza the Corruptor" nameDescription="Zulazza the Corruptor" race="blood" experience="10000" speed="290">
 	<health now="46500" max="46500" />
 	<look type="334" corpse="11107" />
 	<targetchange interval="2000" chance="10" />
@@ -14,58 +14,77 @@
 		<flag canpushcreatures="1" />
 		<flag targetdistance="1" />
 		<flag staticattack="80" />
-		<flag runonhealth="1500" />
+		<flag runonhealth="1400" />
 		<flag isboss="1" />
 	</flags>
 	<attacks>
 		<attack name="melee" interval="2000" min="0" max="-2100" />
-		<attack name="physical" interval="2000" chance="40" length="8" spread="0" min="-500" max="-800">
+		<attack name="physical" interval="2000" chance="40" length="8" spread="0" min="-100" max="-900">
 			<attribute key="areaEffect" value="mortarea" />
 		</attack>
-		<attack name="earth" interval="2000" chance="30" radius="3" target="0" min="-300" max="-800">
+		<attack name="earth" interval="2000" chance="30" radius="3" target="0" min="-250" max="-500">
 			<attribute key="areaEffect" value="poison" />
 		</attack>
-		<attack name="manadrain" interval="2000" chance="25" range="7" target="1" min="-50" max="-130">
+		<attack name="manadrain" interval="2000" chance="25" range="7" target="1" min="-50" max="-250">
 			<attribute key="areaEffect" value="greenshimmer" />
 		</attack>
-		<attack name="speed" interval="2000" chance="20" range="7" speedchange="-500" duration="20000">
+		<attack name="speed" interval="2000" chance="20" range="7" target="1" radius="3" speedchange="-500" duration="20000">
 			<attribute key="areaEffect" value="redshimmer" />
+		</attack>
+		<attack name="poisoncondition" interval="2000" chance="30" radius="5" target="0" min="-400" max="-800">
+			<attribute key="areaEffect" value="poison" />
+		</attack>
+		<attack name="physical" interval="2000" chance="30" radius="5" target="0" min="0" max="-250">
+			<attribute key="areaEffect" value="groundshaker" />
 		</attack>
 	</attacks>
 	<defenses armor="96" defense="119">
-		<defense name="healing" interval="2000" chance="20" min="2000" max="3000">
+		<defense name="healing" interval="2000" chance="20" min="225" max="270">
 			<attribute key="areaEffect" value="blueshimmer" />
 		</defense>
 	</defenses>
 	<elements>
-		<element icePercent="20" />
-		<element holyPercent="20" />
 		<element deathPercent="30" />
+		<element holyPercent="20" />
+		<element icePercent="20" />
 		<element earthPercent="70" />
 	</elements>
 	<immunities>
-		<immunity paralyze="1" />
-		<immunity invisible="1" />
 		<immunity energy="1" />
+		<immunity invisible="1" />
+		<immunity paralyze="1" />
 	</immunities>
 	<voices interval="2000" chance="10">
-		<voice sentence="I'm Zulazza, and you won't forget me that fazzt." />
-		<voice sentence="Oh, HE will take revenge on zzizz azzault when you zztep in front of HIZZ fazze!" />
+		<voice sentence="Zzaion is our last zztand! I will not leave wizzout a fight!" yell="0" />
+		<voice sentence="Oh, HE will take revenge on zzizz azzault when you zztep in front of HIZZ fazze!" yell="0" />
+		<voice sentence="Behind zze Great Gate liezz your doom!" yell="0" />
+		<voice sentence="I'm Zulazza, and you won't forget me that fazzt." yell="0" />
 	</voices>
 	<loot>
-		<item id="2148" name="gold coin" chance="100000" countmax="98" />
-		<item id="2152" name="platinum coin" chance="71429" countmax="6" />
-		<item id="2155" name="green gem" chance="42857" />
-		<item id="2154" name="yellow gem" chance="42857" />
-		<item id="2127" name="emerald bangle" chance="28571" />
-		<item id="7591" name="great health potion" chance="28571" countmax="4" />
-		<item id="8472" name="great spirit potion" chance="28571" countmax="7" />
-		<item id="2156" name="red gem" chance="28571" />
-		<item id="5944" name="soul orb" chance="28571" />
-		<item id="2158" name="blue gem" chance="14286" />
-		<item name="paladin armor" chance="5500" />
-		<item name="earthborn titan armor" chance="550" />
-		<item id="9810" name="slightly rusted armor" chance="14286" />
-		<item id="11118" name="dragon scale boots" chance="500" />
+		<item name="Gold Coin" countmax="100" chance="100000" />
+		<item name="Platinum Coin" countmax="30" chance="73960" />
+		<item name="Slightly Rusted Armor" chance="62720" />
+		<item name="Gold Ingot" countmax="4" chance="60950" />
+		<item name="Giant Shimmering Pearl" countmax="2" chance="42010" />
+		<item name="Red Gem" chance="23080" />
+		<item name="Yellow Gem" chance="22490" />
+		<item name="Viper Star" countmax="46" chance="21890" />
+		<item name="Violet Gem" chance="20710" />
+		<item name="Emerald Bangle" chance="18340" />
+		<item name="Blue Gem" chance="17160" />
+		<item name="Green Gem" chance="16570" />
+		<item name="Soul Orb" countmax="5" chance="16570" />
+		<item name="Great Health Potion" chance="15980" />
+		<item name="Mastermind Potion" chance="15980" />
+		<item name="Ultimate Health Potion" chance="15380" />
+		<item name="Great Mana Potion" chance="13020" />
+		<item name="Great Spirit Potion" chance="13020" />
+		<item name="Guardian Shield" chance="11240" />
+		<item name="Paladin Armor" chance="10060" />
+		<item name="Mastermind Shield" chance="8280" />
+		<item name="Tower Shield" chance="8280" />
+		<item name="Dragon Scale Boots" chance="1780" />
+		<item name="Earthborn Titan Armor" chance="1180" />
+		<item name="Zaoan Halberd" chance="1180" />
 	</loot>
 </monster>

@@ -35,12 +35,10 @@
 		<defense name="invisible" interval="2000" chance="10" duration="4000">
 			<attribute key="areaEffect" value="yellowbubble" />
 		</defense>
-		<defense name="outfit" interval="5000" chance="10" monster="nightstalker" duration="4000" />
-		<defense name="outfit" interval="5000" chance="10" monster="werewolf" duration="4000" />
-		<defense name="outfit" interval="5000" chance="10" monster="the count" duration="4000" />
-		<defense name="outfit" interval="5000" chance="10" monster="grim reaper" duration="4000" />
-		<defense name="outfit" interval="5000" chance="10" monster="tarantula" duration="4000" />
-		<defense name="outfit" interval="5000" chance="1" monster="ferumbras" duration="4000" />
+		<defense name="outfit" interval="5000" chance="10" monster="Werewolf" duration="4000" />
+		<defense name="outfit" interval="5000" chance="10" item="Vampire Lord" duration="4000" />
+		<defense name="outfit" interval="5000" chance="10" monster="Grim Reaper" duration="4000" />
+		<defense name="outfit" interval="5000" chance="1" monster="Ferumbras" duration="4000" />
 	</defenses>
 	<elements>
 		<element physicalPercent="-5" />
@@ -62,17 +60,17 @@
 		<voice sentence="Only the sweetest and cruelest dreams for you, my love." />
 	</voices>
 	<loot>
-		<item id="2124" chance="1030" /><!-- crystal ring -->
-		<item name="gold coin" countmax="100" chance="50000" />
-		<item name="gold coin" countmax="10" chance="50000" />
-		<item name="platinum amulet" chance="121" />
-		<item name="boots of haste" chance="121" />
-		<item name="protection amulet" chance="847" />
-		<item name="shadow herb" chance="4761" />
-		<item name="haunted blade" chance="318" />
-		<item name="chaos mace" chance="121" />
-		<item name="strong mana potion" chance="1612" />
-		<item name="spirit cloak" chance="520" />
-		<item name="crystal of balance" chance="127" />
+		<item name="Gold Coin" countmax="100" chance="89960" />
+		<item name="Gold Coin" countmax="10" chance="89960" />
+		<item name="Shadow Herb" chance="4720" />
+		<item name="Strong Mana Potion" chance="1530" />
+		<item name="Crystal Ring" chance="990" />
+		<item name="Protection Amulet" chance="910" />
+		<item name="Spirit Cloak" chance="530" />
+		<item name="Haunted Blade" chance="300" />
+		<item name="Platinum Amulet" chance="121" />
+		<item name="Crystal of Balance" chance="130" />
+		<item name="Boots of Haste" chance="110" />
+		<item name="Chaos Mace" chance="100" />
 	</loot>
 </monster>
