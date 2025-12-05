@@ -10,9 +10,9 @@ function onThink()				npcHandler:onThink()					end
 local message = {}
 
 local config = {
-	['30 bonelord eyes'] = {storageValue = 1, text = {'Have you really managed to bring me 30 bonelord eyes? <hicks>', 'Do bonelord eyes continue blinking when they are seperated from the bonelord? That is a scary thought.', 'Aw-awsome! <hicks> Squishy! Now, please bring me 10 {red dragon scales}.'}, itemId = 5898, count = 30},
-	['bonelord eyes'] = {storageValue = 1, text = {'Have you really managed to bring me 30 bonelord eyes? <hicks>', 'Do bonelord eyes continue blinking when they are seperated from the bonelord? That is a scary thought.', 'Aw-awsome! <hicks> Squishy! Now, please bring me 10 {red dragon scales}.'}, itemId = 5898, count = 30},
-	['bonelord eye'] = {storageValue = 1, text = {'Have you really managed to bring me 30 bonelord eyes? <hicks>', 'Do bonelord eyes continue blinking when they are seperated from the bonelord? That is a scary thought.', 'Aw-awsome! <hicks> Squishy! Now, please bring me 10 {red dragon scales}.'}, itemId = 5898, count = 30},
+	['30 beholder eyes'] = {storageValue = 1, text = {'Have you really managed to bring me 30 beholder eyes? <hicks>', 'Do beholder eyes continue blinking when they are seperated from the beholder? That is a scary thought.', 'Aw-awsome! <hicks> Squishy! Now, please bring me 10 {red dragon scales}.'}, itemId = 5898, count = 30},
+	['beholder eyes'] = {storageValue = 1, text = {'Have you really managed to bring me 30 beholder eyes? <hicks>', 'Do beholder eyes continue blinking when they are seperated from the beholder? That is a scary thought.', 'Aw-awsome! <hicks> Squishy! Now, please bring me 10 {red dragon scales}.'}, itemId = 5898, count = 30},
+	['beholder eye'] = {storageValue = 1, text = {'Have you really managed to bring me 30 beholder eyes? <hicks>', 'Do beholder eyes continue blinking when they are seperated from the beholder? That is a scary thought.', 'Aw-awsome! <hicks> Squishy! Now, please bring me 10 {red dragon scales}.'}, itemId = 5898, count = 30},
 	['10 red dragon scales'] = {storageValue = 2, text = {'D-did you get all of the 10 red dragon scales? <hicks>', 'Have you ever wondered if a red dragon means \'stop\' whereas a green dragon means \'go\'?', 'G-good work, ... wha-what\'s your name again? <hicks> Anyway... come back with 30 {lizard scales}.'}, itemId = 5882, count = 10},
 	['red dragon scales'] = {storageValue = 2, text = {'D-did you get all of the 10 red dragon scales? <hicks>', 'Have you ever wondered if a red dragon means \'stop\' whereas a green dragon means \'go\'?', 'G-good work, ... wha-what\'s your name again? <hicks> Anyway... come back with 30 {lizard scales}.'}, itemId = 5882, count = 10},
 	['red dragon scale'] = {storageValue = 2, text = {'D-did you get all of the 10 red dragon scales? <hicks>', 'Have you ever wondered if a red dragon means \'stop\' whereas a green dragon means \'go\'?', 'G-good work, ... wha-what\'s your name again? <hicks> Anyway... come back with 30 {lizard scales}.'}, itemId = 5882, count = 10},
@@ -71,10 +71,10 @@ local function creatureSayCallback(cid, type, msg)
 		if npcHandler.topic[cid] == 1 then
 			npcHandler:say({
 				'You\'re a true buddy. I promise I will t-try to avoid killing you even if someone asks me to. <hicks> ...',
-				'Listen, I have this old formula from my grandma. <hicks> It says... 30 {bonelord eyes}... 10 {red dragon scales}. ...',
+				'Listen, I have this old formula from my grandma. <hicks> It says... 30 {beholder eyes}... 10 {red dragon scales}. ...',
 				'Then 30 {lizard scales}... 20 {fish fins} - ew, this sounds disgusting, I wonder if this is really a potion or rather a cleaning agent. ...',
 				'Add 20 ounces of {vampire dust}, 10 ounces of {demon dust} and mix well with one flask of {warrior\'s sweat}. <hicks> ...',
-				'Okayyy, this is a lot... we\'ll take this step by step. <hicks> Will you help me gathering 30 {bonelord eyes}?'
+				'Okayyy, this is a lot... we\'ll take this step by step. <hicks> Will you help me gathering 30 {beholder eyes}?'
 			}, cid)
 			npcHandler.topic[cid] = 2
 		elseif npcHandler.topic[cid] == 2 then

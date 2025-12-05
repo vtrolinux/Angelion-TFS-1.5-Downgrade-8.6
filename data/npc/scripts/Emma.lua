@@ -123,10 +123,10 @@ local function creatureSayCallback(cid, type, msg)
 			npcHandler:say({
 				'The druids have asked the brigade for a favour. Given that we heavily rely on their resources and they are important supporters of our cities, we can\'t deny them the request ...',
 				'A wandering druid has recently visited the Green Claw Swamp, located north west of that corrupted hell hole Venore. While gathering herbs, he noticed some malignant presence in the said area ...',
-				'Searching for the source of evil there, he detected some old ruin. Suddenly, he was attacked by bonelords and their undead minions. He barely managed to escape alive ...',
-				'The evidence he found let him conclude that the bonelords in the ruins were raising so-called death trees.These trees are full of negative energy and slowly but steadily corrupt their surrounding ...',
+				'Searching for the source of evil there, he detected some old ruin. Suddenly, he was attacked by beholders and their undead minions. He barely managed to escape alive ...',
+				'The evidence he found let him conclude that the beholders in the ruins were raising so-called death trees.These trees are full of negative energy and slowly but steadily corrupt their surrounding ...',
 				'After the druid\'s return to Carlin, divination confirmed his upsetting assumptions about the existence of these trees ...',
-				'Over the years, hundreds have fallen victim to the swamp, conserved by mud and water for eternity. With the help of the death trees, the bonelords strive for an army of undeads. This cannot be tolerated ...',
+				'Over the years, hundreds have fallen victim to the swamp, conserved by mud and water for eternity. With the help of the death trees, the beholders strive for an army of undeads. This cannot be tolerated ...',
 				'Travel to Green Claw Swamp and rip out the heart out of the master tree. Without it, the unnatural trees will wither soon. Bring me the heart as proof.'
 			}, cid)
 			npcHandler.topic[cid] = 0

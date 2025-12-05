@@ -128,7 +128,7 @@ local function creatureSayCallback(cid, type, msg)
 				'As you know, our lovely city is a bastion of civilisation surrounded by numerous hazards. The nearby Plains of Havoc and the hostile elven town Shadowthorn are only a few of the obstacles we have to overcome on an almost daily basis ...',
 				'Against all odds, we managed to gain some modest profit by exploiting these circumstances in one way or the other. Recently though, one of our neighbours went too far...',
 				'In some ruin in the midst of the Green Claw Swamp, a dark knight had fancied himself as the lord of the swamp for quite a while ...',
-				'For some years, we had some sort of gentleman\'s agreement. In exchange for some supplies and luxuries, the deranged knight used his ominous influence over the local bonelord species to supply us with ... certain goods ...',
+				'For some years, we had some sort of gentleman\'s agreement. In exchange for some supplies and luxuries, the deranged knight used his ominous influence over the local beholder species to supply us with ... certain goods ...',
 				'However, lately the black knight has proven himself to be no gentleman at all. In a fit of unprovoked rage, he slew our emissary and almost all of his henchmen ...',
 				'Even though we can live with this loss, it becomes obvious that the knight\'s madness gets worse which makes him unbearable as a neighbour. Find him in his hideout in the Green Claw Swamp and get rid of him.'
 			}, cid)

@@ -5,7 +5,7 @@
 	<parameters>
 		<parameter key="module_shop" value="1" />
 		<parameter key="shop_buyable" value="
-			bonelord shield, 2518, 7000;
+			beholder shield, 2518, 7000;
 			noble armor, 2486, 8000;
 			obsidian lance, 2425, 3000;
 			spike sword, 2383, 8000;
@@ -13,7 +13,7 @@
 		<parameter key="shop_sellable" value="
 			angelic axe, 7436, 5000;
 			blue robe, 2656, 10000;
-			bonelord shield, 2518, 1200;
+			beholder shield, 2518, 1200;
 			boots of haste, 2195, 30000;
 			broadsword, 2413, 500;
 			butcher's axe, 7412, 18000;
